@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>betsc — home</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="scale.css"> -->
+    <link rel="icon" href="icn/bts.gif" type="image/gif">
+</head>
+
+<body onload="getPics()">
+    <div class="cnfl">
+        <div class="whole">
+
+            <div class="cnt">
+                <!-- <div class="bordermn">
+                    Menu
+                    <a class="no" href="">About</a>
+                    <a class="no" href="">Contact</a>
+                    <a class="no" href="">Websites</a>
+                </div> -->
+                <div class="abvcn">
+                    <div class="tlhi">
+                        <img style="margin-left: 52px;" src="icn/log.png" alt="">
+                        <!-- <img class="eyeover" src="icn/snf.gif" alt=""> -->
+                        <!-- <img class="handover" src="icn/e62bbe9974fb9a4aae152d1be9bb8858.gif" alt=""> -->
+
+                        <div class="tlh">
+                            <a href="index.html" class="tblock">kaibetschart.com</a>
+                            <a class="coel">© global</a>
+                            <div class="sbt">portfolio & more</div>
+
+
+
+                        </div>
+                        <div class="sbtfl">Welcome to the international studio protfolio. It
+                            contains affiliated and comissioned projects of Kai Betschart. </div>
+                        <div class="db">
+                            <div class="leftbox">
+                                <!-- oiewiofjwoe -->
+
+                            </div>
+                            <div class="incontainer">
+                                <!-- <div class="wordChanger">Der Bauhof</div> -->
+                                <div class="next-ttl">
+                                    <div class="blockhd blhd">
+                                        <!-- <img src="icn/project-sel-txt.png" alt="" class="imgful"> -->
+                                        <!-- <div class="projectitle">How Special</div> -->
+
+                                    </div>
+                                    <div class="divide">
+                                        <div id="imgpaste" class="imgclcont">
+                                            <img src="icn/keyholeeye_e0.gif" class="imgclin" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <div class="infottl" style="margin-left: -45px;">What are you interested in?</div>
+                                            <div class="list">
+                                                <a class="listlol" style="margin-left: 11px; margin-top: 6px;" href="">Illustrations</a>
+                                                <a class="listlol" style="margin-left: 35px;" href="">Graphics and motion</a>
+                                                <a class="listlol" style="margin-left: 43px;" href="">Sound</a> 
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <!-- <div class="textwrap">
+                                        <div class="projectitle">How Special</div>
+
+                                        <div class="textrl">
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                                            clita kasd gubergren,
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <div class=""></div>
+                            </div>
+                            <div class="mnuebox">
+                                <div class="ct">
+                                    <!-- <div class="blockhd"></div> -->
+
+                                    <div class="textwrap">
+
+                                        <div class="textrl">
+                                            <!-- Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                                            clita kasd gubergren, -->
+                                        </div>
+                                    </div>
+                                    <!-- <div class="flgs">
+                                        <img src="icn/Flag_of_Netherlands.png" alt="" class="flgicn">
+                                        <img src="icn/Flag_of_Switzerland.png" alt="" class="flgicn">
+                                    </div> -->
+                                    <!-- <a>Advertsment</a> <br> -->
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- <div class="tl">projects online</div> -->
+                        <!-- <div class="point">
+                            <img src="icn/project-onl-mnu.png" alt="" class="imgful2">
+                            <img src="icn/project-onl-inf.png" alt="" class="imgful2">
+                            <img src="icn/project-onl-txt.png" alt="" class="imgful3">
+                        </div> -->
+                        <div class="clbl">
+                            <!-- <div class="mnblck">
+                                <div class="di sel">Menu:</div>
+                                <a href="/contact.html" class="sel alink">Info / Contact</a>
+                                <a href="/timezone.html" class="sel alink">Timezone</a>
+                                <a href="/information.html" class="sel alink temp">Information</a>
+                                <a href="/links.html" class="sel alink temp">Links</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="flx">
+                        <div class="fill"></div>
+
+
+                    </div>
+                </div>
+                <div class="abvbtm">
+                    <!-- <div class="tz">Time / Zone<span id="clockInsert"></span> CET +2 </div>  -->
+                    <div class="btblock">
+                        <div class="cpr greyed">Redesigning the world around you — kaibetschart.com 2025</div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="fullpage" onclick="this.style.display='none';">
+                <div id="fullpagefill"></div>
+                <img id="fullpageimg" src="" alt="Full Image">
+            </div> -->
+        </div>
+    </div>
+
+    <script>
+        function seededRandom(seed) {
+            return function () {
+                seed ^= seed << 13;
+                seed ^= seed >>> 17;
+                seed ^= seed << 5;
+                return (seed < 0 ? ~seed + 1 : seed) % 1E9 / 1E9; // Scale to [0, 1)
+            }
+        }
+
+        function shuffleArray(array, seed) {
+            const random = seededRandom(seed);
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        function shuffleImages(seed) {
+            const container = document.getElementById('imageContainer');
+            const headimgs = Array.from(container.getElementsByClassName('headimg'));
+            const shuffled = shuffleArray(headimgs, seed);
+
+            container.innerHTML = '';
+            shuffled.forEach(img => container.appendChild(img));
+        }
+
+        // Set a seed and shuffle images
+        const seed = 239;
+        shuffleImages(seed);
+
+    </script>
+
+
+    <script>
+        function animateTextWithCustomClarity(element, duration, steps, startClarity = 0, endClarity = 1) {
+            const targetText = element.textContent;
+            const length = targetText.length;
+            let currentText = Array(length).fill("");
+            const characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+[]{};':,.<>?/|";
+
+            const stepDuration = duration / steps;
+            const clarityRange = endClarity - startClarity;
+
+            function randomChar() {
+                return characters[Math.floor(Math.random() * characters.length)];
+            }
+
+            function updateText(step) {
+                const clarity = startClarity + (step / steps) * clarityRange;
+
+                for (let i = 0; i < length; i++) {
+                    if (Math.random() < clarity) {
+                        currentText[i] = targetText[i]; // Use correct character
+                    } else {
+                        currentText[i] = randomChar(); // Use random character
+                    }
+                }
+
+                element.textContent = currentText.join("");
+
+                if (step < steps) {
+                    setTimeout(() => updateText(step + 1), stepDuration);
+                }
+            }
+
+            updateText(0);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const element = document.querySelector(".wordChanger");
+            if (element) {
+                // Animate with custom clarity range
+                animateTextWithCustomClarity(element, 350, 5, 0.7, 1); // 2000ms, 6 steps, 20% to 80% clarity
+            }
+        });
+
+
+
+    </script>
+
+    <script>
+        // Sicherstellen, dass das Skript erst ausgeführt wird, wenn das DOM geladen ist
+        document.addEventListener("DOMContentLoaded", function () {
+            // Wähle alle Elemente mit der Klasse "headimg"
+            const containers = document.querySelectorAll(".headimg");
+
+            // Container für die eingefügte Grafik
+            const imgPasteContainer = document.getElementById("imgpaste");
+
+            // Event-Listener für jeden div.headimg hinzufügen
+            containers.forEach(container => {
+                container.addEventListener("click", function () {
+                    // Finde das <img>-Kind des geklickten Containers
+                    const img = container.querySelector("img");
+
+                    if (img) {
+                        // Erstellen einer Kopie des Bildes
+                        const clonedImg = img.cloneNode(true);
+
+                        // Entfernen der Klasse "imgcl" und Hinzufügen der Klasse "imgclin"
+                        clonedImg.classList.remove("imgcl");
+                        clonedImg.classList.add("imgclin");
+
+                        // Vorherigen Inhalt aus dem Container entfernen
+                        imgPasteContainer.innerHTML = "";
+
+                        // Das geklonte Bild in den Container einfügen
+                        imgPasteContainer.appendChild(clonedImg);
+                    }
+                });
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>

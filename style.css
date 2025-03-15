@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "folio";
+    src: url(font/Folio-Std-Light.ttf);
+}
+@font-face {
+    font-family: "helvetica neue";
+    src: url(font/HelveticaNeueLTCom-Roman.ttf);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-left: 35px;
+    /* margin-left: 56px; */
+}
+
+.cnfl {
+    width: 600px;
+    /* border: 1px solid black;
+    padding: 15px; */
+}
+
+.sbt {
+    letter-spacing: 10px;
+    font-size: 11px;
+    /* font-style: italic; */
+    /* text-transform: uppercase; */
+    margin-left: -18px;
+    /* margin-bottom: 10px; */
+}
+
+.tlhi {
+    position: relative;
+}
+
+.eyeover {
+    position: absolute;
+    transform: translateX(50%);
+    transform: translateY(50%);
+    left: -41px;
+    top: -6px;
+    z-index: -1;
+    height: 62px;
+}
+
+/* .handover {
+    position: absolute;
+    transform: translateX(50%);
+    transform: translateY(50%);
+    left: 428px;
+    top: 16px;
+    z-index: -1;
+    height: 62px;
+} */
+
+.tlh {
+    /* padding-left: 50px; */
+    padding-left: 126px;
+    margin-top: -20px;
+}
+
+.divide {
+    display: flex;
+}
+
+.imgclcont {
+    margin-left: -46px;
+    /* margin-left: -35px; */
+}
+
+.imgclin {
+    /* height: 74px; */
+    /* height: 180px; */
+    /* margin-left: 191px; */
+    margin-left: 168px;
+    margin-top: 46px;
+    
+}
+
+a {
+    /* line-height: 19px; */
+}
+
+.info {
+    padding-left: 10px;
+    /* border: 1px solid black; */
+    width: 100%;
+    margin-left: -5px;
+    margin-top: -3px;
+}
+
+.list {
+    line-height: 30px;
+}
+
+.infottl {
+    font-weight: 700;
+}
+
+.listlol {
+    display: block;
+    width: fit-content;
+}
+
+.btblock {
+    margin-top: 44px;
+}
+
+.cnt {
+    position: relative;
+}
+.bordermn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: x-small;
+    display: block;
+    line-height: 16px;
+    text-align: right;
+
+}
+
+.no {
+    display: block;
+}
+
+
+
+@media screen and (max-width: 633px) {
+    .divide {
+        margin-top: 21px;
+    }
+    
+}
