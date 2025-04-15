@@ -6,257 +6,917 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kaibetschart.com</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="scale.css"> -->
-    <link rel="icon" href="icn/bts.gif" type="image/gif">
+    <link rel="icon" href="img/deco/02sunflower.gif" type="image/gif">
 </head>
 
-<body onload="getPics()">
-    <div class="cnfl">
-        <div class="whole">
+<body id="scale-wrapper">
+    <div class="site" id="content">
+        <div class="hdins">
+            <!-- <span class="prehub">www.</span> -->
+            <!-- style="transform: translateX(40px);" -->
 
-            <div class="cnt">
-                <!-- <div class="bordermn">
-                    Menu
-                    <a class="no" href="">About</a>
-                    <a class="no" href="">Contact</a>
-                    <a class="no" href="">Websites</a>
+            <!-- <div class="title spc">
+                    portfolio
+                </div>
+                <img src="img/deco/i-54100.gif" alt="" class="spc imtt">
+                <div class="sn">
+                    kaibetschart.com
                 </div> -->
-                <div class="abvcn">
-                    <div class="tlhi">
-                        <img style="margin-left: 52px;" src="icn/log.png" alt="">
-                        <!-- <img class="eyeover" src="icn/snf.gif" alt=""> -->
-                        <!-- <img class="handover" src="icn/e62bbe9974fb9a4aae152d1be9bb8858.gif" alt=""> -->
 
-                        <div class="tlh">
-                            <a href="index.html" class="tblock">kaibetschart.com</a>
-                            <a class="coel">© global</a>
-                            <div class="sbt">portfolio & more</div>
-
-
-
-                        </div>
-                        <div class="sbtfl">Welcome to the international studio protfolio. It
-                            contains affiliated and comissioned projects of Kai Betschart. </div>
-                        <div class="db">
-                            <div class="leftbox">
-                                <!-- oiewiofjwoe -->
-
-                            </div>
-                            <div class="incontainer">
-                                <!-- <div class="wordChanger">Der Bauhof</div> -->
-                                <div class="next-ttl">
-                                    <div class="blockhd blhd">
-                                        <!-- <img src="icn/project-sel-txt.png" alt="" class="imgful"> -->
-                                        <!-- <div class="projectitle">How Special</div> -->
-
-                                    </div>
-                                    <div class="divide">
-                                        <div id="imgpaste" class="imgclcont">
-                                            <img src="icn/keyholeeye_e0.gif" class="imgclin" alt="">
-                                        </div>
-                                        <div class="info">
-                                            <div class="infottl" style="margin-left: -45px;">What are you interested in?</div>
-                                            <div class="list">
-                                                <a class="listlol" style="margin-left: 16px; margin-top: 6px;" href="">Illustrations</a>
-                                                <a class="listlol" style="margin-left: 35px;" href="">Graphics and motion</a>
-                                                <a class="listlol" style="    margin-left: 40px;" href="">Photography</a> 
-                                                <a class="listlol" style="    margin-left: 23px;" href="">Sound</a> 
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    
-                                    <!-- <div class="textwrap">
-                                        <div class="projectitle">How Special</div>
-
-                                        <div class="textrl">
-                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-                                            clita kasd gubergren,
-                                        </div>
-                                    </div> -->
-                                </div>
-                                <div class=""></div>
-                            </div>
-                            <div class="mnuebox">
-                                <div class="ct">
-                                    <!-- <div class="blockhd"></div> -->
-
-                                    <div class="textwrap">
-
-                                        <div class="textrl">
-                                            <!-- Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-                                            clita kasd gubergren, -->
-                                        </div>
-                                    </div>
-                                    <!-- <div class="flgs">
-                                        <img src="icn/Flag_of_Netherlands.png" alt="" class="flgicn">
-                                        <img src="icn/Flag_of_Switzerland.png" alt="" class="flgicn">
-                                    </div> -->
-                                    <!-- <a>Advertsment</a> <br> -->
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- <div class="tl">projects online</div> -->
-                        <!-- <div class="point">
-                            <img src="icn/project-onl-mnu.png" alt="" class="imgful2">
-                            <img src="icn/project-onl-inf.png" alt="" class="imgful2">
-                            <img src="icn/project-onl-txt.png" alt="" class="imgful3">
-                        </div> -->
-                        <div class="clbl">
-                            <!-- <div class="mnblck">
-                                <div class="di sel">Menu:</div>
-                                <a href="/contact.html" class="sel alink">Info / Contact</a>
-                                <a href="/timezone.html" class="sel alink">Timezone</a>
-                                <a href="/information.html" class="sel alink temp">Information</a>
-                                <a href="/links.html" class="sel alink temp">Links</a>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom">
-                    <div class="flx">
-                        <div class="fill"></div>
-
-
-                    </div>
-                </div>
-                <div class="abvbtm">
-                    <!-- <div class="tz">Time / Zone<span id="clockInsert"></span> CET +2 </div>  -->
-                    <div class="btblock">
-                        <div class="cpr greyed">Redesigning the world around you — kaibetschart.com 2025</div>
-                    </div>
+        </div>
+        <div class="mnhead">
+            <div data-page="home" class="itm head dont brd" onclick="resetAllSlideshows()">
+                <div class="scrollContainer spcmn">
+                    <span class=" ahifpw">portfolio</span>
+                    <img src="img/deco/i-54100.gif" alt="" class=""
+                        style="height: 21px; padding-left: 5px; padding-right: 5px;">
+                    <span class="ahifpw" style="padding-right: 50px;">www.kaibetschart.com</span>
                 </div>
             </div>
-            <!-- <div id="fullpage" onclick="this.style.display='none';">
-                <div id="fullpagefill"></div>
-                <img id="fullpageimg" src="" alt="Full Image">
+            <div class="mn">
+                <div style="width: 55px;" class="mntxt spcmn brd offcn"><span data-page="contact"
+                        class="itm ">Contact</span>
+                </div>
+                <div class="mntxt spcmn offcn mnimt brd" style="width: 100px;"><span data-page="information"
+                        class="spaceXD itm">Information</span>
+                    <img src="img/deco/infoBubble.gif" alt="" class="sml">
+                </div>
+                <div class="mntxt spcmn offcn " style="width: 34px;"><span data-page="links" class="itm">Links</span>
+                </div>
+
+            </div>
+
+
+
+            <!-- <div class="scrollContainer scWrap">
+                <div class="wrapmrq">
+                    <span>Portfolio</span>
+                    <img src="img/deco/3IsN.gif" alt="" class=""
+                        style="height: 21px; padding-left: 4px; padding-right: 4px;">
+                    <span style="padding-right: 10px;">www.kaibetschart.com</span>
+
+                    
+
+                    <span>New &raquo;</span>
+                    <img src="img/deco/i-54100.gif" alt="" class=""
+                        style="height: 21px; padding-bottom: 2px; padding-left: 8px; padding-right: 0 px;">
+                    <span class="spacesm stlc">
+                        <span style="font-weight: 900;">
+                            3D
+                        </span style="height: 21px; padding-bottom: 2px; padding-left: 4px; padding-right: 4px;">
+                        (page 2
+                        )</span>
+                    <span style="padding-left: 10px;">New &raquo;</span>
+                    <img src="img/deco/i-54100.gif" alt="" class=""
+                        style="height: 21px; padding-bottom: 2px; padding-left: 8px; padding-right: 0 px;">
+                    <span class="spacesm stlc"><span style="font-weight: 900;">
+                            Graphic Design
+                        </span>
+                        (page 1)
+                    </span>
+                    <span style="padding-left: 10px;">Echo</span>
+                    <img src="img/deco/hello2.gif" alt="" class=""
+                        style="height: 21px; padding-left: 2px; padding-right: 6px;">
+                    <span style="padding-right: 10px;">Vision</span>
+                    <span>Young</span>
+                    <img src="img/deco/i-57225.gif" alt="" class=""
+                        style="height: 21px;  padding-left: 4px; padding-right: 4px;">
+                    <span>Build</span>
+                    <img src="img/deco/01blink.gif" alt="" class=""
+                        style="height: 21px;  padding-left: 4px; padding-right: 4px;">
+                    <span>Think</span>
+                </div>
+                <div class="wrapmrq">
+                    <span>Portfolio</span>
+                    <img src="img/deco/3IsN.gif" alt="" class=""
+                        style="height: 21px; padding-left: 4px; padding-right: 4px;">
+                    <span style="padding-right: 10px;">www.kaibetschart.com</span>
+
+                    
+
+                    <span>New &raquo;</span>
+                    <img src="img/deco/i-54100.gif" alt="" class=""
+                        style="height: 21px; padding-bottom: 2px; padding-left: 8px; padding-right: 0 px;">
+                    <span class="spacesm stlc">
+                        <span style="font-weight: 900;">
+                            3D
+                        </span style="height: 21px; padding-bottom: 2px; padding-left: 4px; padding-right: 4px;">
+                        (page 2
+                        )</span>
+                    <span style="padding-left: 10px;">New &raquo;</span>
+                    <img src="img/deco/i-54100.gif" alt="" class=""
+                        style="height: 21px; padding-bottom: 2px; padding-left: 8px; padding-right: 0 px;">
+                    <span class="spacesm stlc"><span style="font-weight: 900;">
+                            Graphic Design
+                        </span>
+                        (page 1)
+                    </span>
+                    <span style="padding-left: 10px;">Echo</span>
+                    <img src="img/deco/hello2.gif" alt="" class=""
+                        style="height: 21px; padding-left: 2px; padding-right: 6px;">
+                    <span style="padding-right: 10px;">Vision</span>
+                    <span>Young</span>
+                    <img src="img/deco/i-57225.gif" alt="" class=""
+                        style="height: 21px;  padding-left: 4px; padding-right: 4px;">
+                    <span>Build</span>
+                    <img src="img/deco/01blink.gif" alt="" class=""
+                        style="height: 21px;  padding-left: 4px; padding-right: 4px;">
+                    <span>Think</span>
+                </div>
+
             </div> -->
+        </div>
+
+        <div class="mnp pb">
+            <!-- <div class="mntxt spcpj ho">projects</div> -->
+            <div data-page="3d" class="mntxt spcpj  itm" style="width: 21px;" onclick="resetAllSlideshows()">3D</div>
+            <div data-page="illustration" class="mntxt spcpj  itm" style="width: 87px;" onclick="resetAllSlideshows()">
+                Illustration
+            </div>
+            <div data-page="wd" class="mntxt spcpj  itm" style="width: 87px;" onclick="resetAllSlideshows()">Web
+                Design
+            </div>
+            <div data-page="mw" class="mntxt spcpj  itm " style="width: 105px;" onclick="resetAllSlideshows()">
+                Mei Weather</div>
+            <div data-page="hs" class="mntxt spcpj  itm" style="width: 90px;" onclick="resetAllSlideshows()">How
+                Special</div>
+            <div data-page="gd" class="mntxt spcpj  itm" style="width: 111px;" onclick="resetAllSlideshows()">
+                Graphic Design</div>
+            <div data-page="photography" class="mntxt spcpj  itm" style="width: 92px;" onclick="resetAllSlideshows()">
+                Photography</div>
+        </div>
+        <!-- <div class="mne">
+            <div data-page="lm" class="spcpj  itm" style="width: 72px;" onclick="resetAllSlideshows()">Lua Monu</div>
+            <div data-page="photography" class="spcpj offcn itm" style="width: 87px;" onclick="resetAllSlideshows()">
+                Photography</div>
+            <div data-page="illustration" class="spcpj offcn itm" style="width: 105px;" onclick="resetAllSlideshows()">
+                Illustration</div>
+            <div data-page="mw" class="spcpj offcn itm" style="width: 90px;" onclick="resetAllSlideshows()">Mei Weather
+            </div>
+        </div> -->
+
+        <!-- <div class="mid-box" >
+                    <div class="process">
+                        <div class="loading-text" id="loading">select a project</div>
+                        <img class="hgif" src="img/deco/hello2.gif" alt="">
+                        <img class="wgif" src="img/deco/ZELY.gif" alt="">
+                    </div>
+                </div> -->
+
+        <div id="content" class="container">
+            <!-- <div class="page home">
+                <div class="mySlidessm"></div>
+            </div> -->
+            <div class="page 3d" style="display:none;">
+
+                <div class="slider" id="slider1">
+                    <div class="mySlides">
+                        <img src="img/pj/3d/wireframed_0002.png" class="imj" height="490px">
+                        <img src="img/pj/3d/carpet_banker_wireframe_0003--newfix_noqtz_0002.png" class="imj"
+                            height="490px">
+                    </div>
+                    <div class="mySlides">
+                        <img src="img/pj/3d/photoshop editing_0003.png" class="imj" height="490px">
+                        <img src="img/pj/3d/inflame.png" class="imj" height="490px">
+                    </div>
+                    <div class="mySlides">
+                        <img src="img/pj/3d/gradee.png" class="imj" height="490px">
+                        <img src="img/pj/3d/guy setup down v2.png" class="imj" height="490px">
+                    </div>
+                    <div class="mySlides">
+                        <img src="img/pj/3d/city build alt 2.png" class="imj" height="490px">
+                        <img src="img/pj/3d/room-3-back.png" class="imj">
+                    </div>
+
+                    <!-- <div class="caption-container">
+                        <p id="caption"></p>x   
+                    </div> -->
+
+                    <div class="row numbers">
+                        <a class="prev">&#129128;</a>
+                        <a class="next">&#129130;</a>
+                        <div class="column number" data-index="1">1</div>
+                        <div class="column number" data-index="2">2</div>
+                        <div class="column number" data-index="3">3</div>
+                        <div class="column number" data-index="4">4</div>
+                    </div>
+                    <div class="infc">
+                        <div class="ptl">3D</div>
+                        <div class="ptxt">
+                            <span class="txmain">I incorporate 3D design to bring some refreshing aspects into my work.
+                            </span>
+                            <span>
+                                <span class="spc">
+                                    <span class="bone">Type</span>
+                                    <span class="btx">3D <br>
+                                    </span>
+                                </span>
+                                <span class="spc">
+                                    <span class="bone">Year</span>
+                                    <span>2023 - Now</span>
+                                </span>
+                            </span>
+                            <span>
+                                <!-- <span class="spc">
+                                    <span class="bone">Link(s)</span>
+                                    <span class="btx">
+                                        <span class="btx">~</span>
+                                    </span>
+                                </span> -->
+                            </span>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="page illustration" style="display:none;">
+
+
+
+                <div class="slider" id="slider2">
+                    <div class="mySlides">
+                        <img src="img/pj/drawings/internet melody text copyv2.png" class="wdDFfxwt wt">
+                        <img src="img/pj/drawings/051 copy.png" class="wdDFfxwt wt">
+                    </div>
+                    <div class="mySlides">
+                        <img src="img/pj/drawings/jonas adn.png" class="wdDFfxwt wt">
+                        <img src="img/pj/drawings/le phishe_2.png" class="wdDFfxwt wt">
+                    </div>
+                    <div class="mySlides">
+                        <img src="img/pj/drawings/hyperdark copy.png" class="wdDFfx ">
+                        <img src="img/pj/drawings/green copy.png" class="wdDFfx ">
+                    </div>
+                    <div class="mySlides">
+                        <img src="img/pj/drawings/058 img copy.png" class="wdDFfxwt wt ">
+                        <img src="img/pj/drawings/019 copyy.jpg" class=" wdDFfxwt wt">
+                    </div>
+                    <div class="mySlides">
+                        <img src="img/pj/drawings/cultured_2.png" class="wdDFfxwt wt">
+                        <img src="img/pj/drawings/inweb.png" class="wdDFfxwt wt">
+                    </div>
+                    <div class="mySlides">
+                        <img src="img/pj/drawings/technology.png" class="wdDFfxwt wt">
+                    </div>
+                    <div class="mySlides">
+                        <img src="img/pj/drawings/4.png" class="wdDFfxwt wt">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="img/pj/drawings/take this brick lolll.png" class="wdDFfxwt wt">
+                        <img src="img/pj/drawings/zeichnung - Kopie - コピー.png" class="wdDFfxwt wt">
+                    </div>
+                    <div class="mySlides">
+                        <img src="img/pj/drawings/sob.png" class="wdDFfxwt wt">
+                        <img src="img/pj/drawings/057 copy_2.png" class="wdDFfxwt wt">
+                    </div>
+                    <div class="mySlides">
+                        <img src="img/pj/drawings/012 copy.png" class="wdDFfxwt wt">
+                    </div>
+
+                    <!-- <div class="caption-container">
+                        <p id="caption"></p>x   
+                    </div> -->
+
+                    <div class="row numbers">
+                        <a class="prev">&#129128;</a>
+                        <a class="next">&#129130;</a>
+                        <div class="column number" data-index="1">1</div>
+                        <div class="column number" data-index="2">2</div>
+                        <div class="column number" data-index="3">3</div>
+                        <div class="column number" data-index="4">4</div>
+                        <div class="column number" data-index="5">5</div>
+                        <div class="column number" data-index="6">6</div>
+                        <div class="column number" data-index="7">7</div>
+                        <div class="column number" data-index="8">8</div>
+                        <div class="column number" data-index="9">9</div>
+                        <div class="column number" data-index="10">10</div>
+                    </div>
+                    <div class="infc">
+                        <div class="ptl">Illustration</div>
+                        <div class="ptxt">
+                            <span class="txmain">
+                            </span>
+                            <span>
+                                <!-- <span class="spc">
+                                    <span class="bone">Type</span>
+                                    <span class="btx">Illustration <br>
+                                    </span>
+                                </span> -->
+                                <!-- <span class="spc">
+                                    <span class="bone">Year</span>
+                                    <span>~</span>
+                                </span> -->
+                            </span>
+                            <span>
+                                <!-- <span class="spc">
+                                    <span class="bone">Link(s)</span>
+                                    <span class="btx">
+                                        <span class="btx">~</span>
+                                    </span>
+                                </span> -->
+                            </span>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="page wd" style="display:none;">
+
+                <div class="slider" id="slider3">
+                    <div class="mySlides">
+                        <img src="img/pj/web/site.PNG" class="wdDFfxwt wt">
+                        <!-- <img src="img/pj/web/portfl2.png" class="wdBfx wt"> -->
+                        <!-- <img src="img/pj/photography/DSC_7316.jpg" class="wdDFfx"> -->
+                    </div>
+                    <!-- <div class="mySlides">
+                        <img src="img/pj/photography/Untitled Clip 02.00_08_41_11.Still069.png" class="" style="width: 100%;">
+                    </div> -->
+
+                    <div class="row numbers">
+                        <div class="warningbox">⚠ This section is in development</div>
+                    </div>
+                    <div class="infc">
+                        <span style="display: flex;">
+                            <div class="ptl">Web Design</div>
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="page hs" style="display:none;">
+                <div class="slider" id="slider4">
+                    <div class="mySlides">
+                        <img src="img/pj/how special/eye.png" class="imj">
+                        <img src="img/pj/how special/invest_today.gif" class="imjsp wt">
+                    </div>
+                    <div class="mySlides">
+                        <!-- <div class="dsp">
+                            <img src="img/pj/how special/fold.gif" alt="" class="hd">
+                        </div> -->
+                        <img src="img/pj/how special/hs25.gif" class="wdfx">
+                        <img src="img/pj/how special/fold.gif" class="imj">
+                        <!-- <img src="img/pj/how special/hs25.gif" alt="" class="imj"> -->
+                    </div>
+                    <div class="mySlides">
+                        <img src="img/pj/how special/Comp 2 (0-00-29-23)_1.png" class="wt wdBfx">
+                        <img src="img/pj/how special/scaled.png" class="wt wdAfx">
+                    </div>
+                    <div class="mySlides">
+                        <img src="img/pj/how special/Unbenannt-1.png" class="wdDFfx">
+                    </div>
+                    <div class="mySlides">
+                        <iframe class="wdvdfx" src="https://www.youtube.com/embed/dC0TbUB-gnM?si=FZxeB-7jPz2sVHgn"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- <div class="caption-container">
+                        <p id="caption"></p>x   
+                    </div> -->
+
+                    <div class="row numbers">
+                        <a class="prev">&#129128;</a>
+                        <a class="next">&#129130;</a>
+                        <div class="column number" data-index="1">1</div>
+                        <div class="column number" data-index="2">2</div>
+                        <div class="column number" data-index="3">3</div>
+                        <div class="column number" data-index="4">4</div>
+                        <div class="column number" data-index="5">5</div>
+                    </div>
+                    <div class="infc">
+                        <div class="ptl">How Special</div>
+                        <div class="ptxt">
+                            <span class="txmain">The design of the brand is an ongoing process as How Special is
+                                currently
+                                being developed. The idea is a central hub in form of a collection that covers multiple
+                                arches of crafts including music, graphic design and photography.</span>
+                            <span>
+                                <span class="spc">
+                                    <span class="bone">Type</span>
+                                    <span class="btx">Brand and Identity, <br>
+                                        Webdesign, <br> Motion and Graphic Design</span>
+                                </span>
+                                <span class="spc">
+                                    <span class="bone">Year</span>
+                                    <span>2023 - Now</span>
+                                </span>
+                            </span>
+                            <span>
+                                <span class="spc">
+                                    <span class="bone">Link(s)</span>
+                                    <span class="btx">
+                                        <a class="lnk"
+                                            href="mailto:howspecialinternet@gmail.com">howspecialinternet@gmail.com
+                                        </a>
+                                        <br>
+                                        <a class="lnk" target="_blank"
+                                            href="https://www.instagram.com/howspeciall">www.instagram.com/howspeciall
+                                        </a>
+                                        <br>
+                                        <a class="lnk" target="_blank"
+                                            href="https://soundcloud.com/how-special">www.soundcloud.com/how-special</a>
+                                    </span>
+
+                                </span>
+                            </span>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="page contact" style="display:none;">
+                    <div class="pjhd">
+                        Contact
+                    </div>
+                    <div class="pjin">
+                        E-Mail: <span><a href="mailto:betschart.kaai@gmail.com">betschart.kaai@gmail.com</a></span>
+                    </div>
+                </div>
+
+                <div class="page information" style="display:none;">
+                    <div>Hier erfährst du mehr über uns.</div>
+                </div>
+
+                <div class="page links" style="display:none;">
+                    <div>So kannst du uns erreichen.</div>
+                </div>
+            </div>
+            <div class="page mw" style="display:none;">
+                <div class="slider" id="slider5">
+                    <div class="mySlides">
+                        <img src="img/pj/mei weather/3.png" class="wdmdfx wt">
+                        <img src="img/pj/mei weather/2.png" class="wdmdfx wt">
+                    </div>
+                    <div class="mySlides">
+                        <img src="img/pj/mei weather/4.png" class="wdmdfx wt">
+                        <img src="img/pj/mei weather/5.png" class="wdmdfx wt">
+                    </div>
+
+                    <div class="row numbers">
+                        <a class="prev">&#129128;</a>
+                        <a class="next">&#129130;</a>
+                        <div class="column number" data-index="1">1</div>
+                        <div class="column number" data-index="2">2</div>
+                    </div>
+                    <div class="infc">
+                        <div class="ptl">Mei Weather</div>
+                        <div class="ptxt">
+                            <span class="txmain">A few frames i made for the practise of exercising stilizing means.
+                            </span>
+                            <span>
+                                <span class="spc">
+                                    <span class="bone">Type</span>
+                                    <span class="btx">Illustration, 3D, Stilizing<br>
+                                    </span>
+                                </span>
+                                <span class="spc">
+                                    <span class="bone">Year</span>
+                                    <span>2022</span>
+                                </span>
+                            </span>
+                            <span>
+                                <!-- <span class="spc">
+                                    <span class="bone">Link(s)</span>
+                                    <span class="btx">
+                                        ~
+                                    </span>
+
+                                </span> -->
+                            </span>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="page contact" style="display:none;">
+                    <div class="pjhd">
+                        Contact
+                    </div>
+                    <div class="pjin">
+                        E-Mail: <span><a href="mailto:betschart.kaai@gmail.com">betschart.kaai@gmail.com</a></span>
+                    </div>
+                </div>
+
+                <div class="page information" style="display:none;">
+                    <div>Hier erfährst du mehr über uns.</div>
+                </div>
+
+                <div class="page links" style="display:none;">
+                    <div>So kannst du uns erreichen.</div>
+                </div>
+            </div>
+            <div class="page gd" style="display:none;">
+                <div class="slider" id="slider6">
+                    <div class="mySlides">
+                        <img src="img/pj/misc graphic work/mittelband vinylplatte copy3.png" class="wdmdfx">
+                        <img src="img/pj/misc graphic work/a1288602589_10 (0-00-00-00).png" class="wdmdfstx ">
+                    </div>
+
+
+                    <div class="mySlides">
+                        <img src="img/pj/misc graphic work/webkai.gif" class=" wdmdfx wt" style="max-width: 60%;">
+                        <img src="img/pj/mt/Comp-1-(0-00-00-00)-copy.gif" class="wdmdfx" style="max-width: 40%;">
+                    </div>
+                    <div class="mySlides">
+                        <img src="img/pj/misc graphic work/i can't force myself.png" class="wdmdfx ">
+                        <img src="img/pj/misc graphic work/musictomeears.png" class="wdmdfx " style="max-width: 50%;">
+                    </div>
+                    <div class="mySlides">
+                        <img src="img/pj/misc graphic work/soulseek word scramble.png" class="wdmdfx wt">
+                        <img src="img/pj/misc graphic work/techniclines Comp 1 (0-00-21-19) copy.png" class="wdmdfx wt"
+                            style="max-width: calc(60% - 4px);">
+                    </div>
+                    <div class="mySlides">
+                        <img src="img/pj/misc graphic work/Front Page (0-00-00-00).png" class="wdAfx"
+                            style="max-width: calc(68% + -2px);">
+                        <img src="img/pj/misc graphic work/EPK page 5 (Onesheet) copy.png" class="wdmdfx wt">
+                    </div>
+                    <!-- <img src="img/pj/misc graphic work/a1288602589_10 (0-00-00-00).png" class="wdAfx"> -->
+
+                    <div class="mySlides">
+                        <iframe width="653" height="490"
+                            src="https://www.youtube.com/embed/SYVSE8JGTCg?si=IXCFNHXrPCWMXJRU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="mySlides">
+                        <img src="img/pj/asteroid colony/ab.gif" class="wdDFfx ">
+                        <img src="img/pj/misc graphic work/gloria_40_jahre.png" class="wdmdfx wt">
+
+                    </div>
+                    <div class="mySlides">
+                        <img src="img/pj/misc graphic work/flsc hekllerrgb.jpg" class="wdDFfx ">
+                    </div>
+                    <div class="mySlides">
+                        <img src="img/pj/misc graphic work/texture_1_2.jpg" class="" style="max-height: 100%;">
+                        <img src="img/pj/misc graphic work/Branding_Book_page_3.png" class="wdmdfx wt">
+
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="img/pj/misc graphic work/photoshop editing_0002_2.png" class="wdmdfx "
+                            style="max-width: calc(37% - 3px);">
+                        <img src="img/pj/misc graphic work/what.png" class="wdDFfx ">
+
+                    </div>
+
+
+
+                    <div class="row numbers">
+                        <a class="prev">&#129128;</a>
+                        <a class="next">&#129130;</a>
+                        <div class="column number" data-index="1">1</div>
+                        <div class="column number" data-index="2">2</div>
+                        <div class="column number" data-index="3">3</div>
+                        <div class="column number" data-index="4">4</div>
+                        <div class="column number" data-index="5">5</div>
+                        <div class="column number" data-index="6">6</div>
+                        <div class="column number" data-index="7">7</div>
+                        <div class="column number" data-index="8">8</div>
+                        <div class="column number" data-index="9">9</div>
+                        <div class="column number" data-index="10">10</div>
+                    </div>
+                    <div class="infc">
+                        <div class="ptl">Graphic Design</div>
+                        <div class="ptxt">
+                            <span class="txmain">
+                                This is my collection of some of the graphic design work that i have made over the past
+                                few years (2020 - 2025). It consists of formats such as cover and page designs, motion
+                                graphics and more.
+                            </span>
+                            <span>
+                                <span class="spc">
+                                    <span class="bone">Type</span>
+                                    <span class="btx">~</span>
+                                </span>
+                                <span class="spc">
+                                    <span class="bone">Year</span>
+                                    <span>2020 - 2025</span>
+                                </span>
+                            </span>
+                            <span>
+                                <span class="spc">
+                                    <span class="bone">Link(s)</span>
+                                    <span class="btx">
+                                        <span class="btx">~</span>
+                                    </span>
+                                </span>
+                            </span>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="page contact" style="display:none;">
+                    <div class="pjhd">
+                        Contact
+                    </div>
+                    <div class="pjin">
+                        E-Mail: <span><a href="mailto:betschart.kaai@gmail.com">betschart.kaai@gmail.com</a></span>
+                    </div>
+                </div>
+
+                <div class="page information" style="display:none;">
+                    <div>Hier erfährst du mehr über uns.</div>
+                </div>
+
+                <div class="page links" style="display:none;">
+                    <div>So kannst du uns erreichen.</div>
+                </div>
+            </div>
+            <div class="page photography" style="display:none;">
+
+                <div class="slider" id="slider7">
+                    <div class="mySlides">
+                        <img src="img/pj/photography/Untitled Clip 02.00_42_27_02.Still203.png" class="wdDFfx">
+                        <!-- <img src="img/pj/photography/DSC_7316.jpg" class="wdDFfx"> -->
+                    </div>
+                    <!-- <div class="mySlides">
+                        <img src="img/pj/photography/Untitled Clip 02.00_08_41_11.Still069.png" class="" style="width: 100%;">
+                    </div> -->
+
+                    <div class="row numbers">
+                        <div class="warningbox">⚠ This section is in development</div>
+                    </div>
+                    <div class="infc">
+                        <span style="display: flex;">
+                            <div class="ptl">Photography</div>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="page home">
+                <div class="mySlides ccwe">
+                    <div class="mx">
+
+                        <div class="hmpg">
+                            <img src="img/deco/02sunflower.gif" alt="" class="ichm">
+                            <img src="img/deco/3IsN.gif" alt="" class="ichm">
+
+                            <img src="img/deco/01blink.gif" alt="" class="ichm">
+                            <img src="img/deco/09water.gif" alt="" class="ichm">
+                            <!-- <img src="img/deco/10palette.gif" alt="" class="ichm">
+                            <img src="img/deco/12melody.gif" alt="" class="ichm"> -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="infc">
+
+                </div>
+            </div>
+
+
+            <div class="page contact" style="display:none;">
+                <div class="mySlidessm">
+
+                    <div class="pjin">
+                        <span><a href="mailto:betschart.kaai@gmail.com">betschart.kaai@gmail.com</a></span>
+                    </div>
+                </div>
+                <div class="row numbers">
+                    <div class="warningbox">⚠ This section is in development</div>
+                </div>
+                <div class="infc">
+                    <span style="display: flex;">
+                        <div class="ptl">Contact</div>
+                    </span>
+                </div>
+            </div>
+
+            <div class="page information" style="display:none;">
+                <div class="mySlidessm ccwe">
+
+                    <div>
+                        <img src="img/deco/text_0000224.png" alt="" class="mxlg" style="transform: translateY(-20px);">
+                    </div>
+                </div>
+                <div class="row numbers">
+                    <div class="warningbox">⚠ This section is in development</div>
+                </div>
+                <div class="infc">
+                    <span style="display: flex;">
+                        <div class="ptl">Information</div>
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="page links" style="display:none;">
+                <div class="mySlidessm">
+
+                    <div class="pjin bfft">
+                        <span>
+                            <a target="_blank" href="https://www.instagram.com/nullnet/">https://www.instagram.com/nullnet/</a>
+                        </span>
+                    </div>
+
+                </div>
+                <div class="row numbers">
+                    <div class="warningbox">⚠ This section is in development</div>
+                </div>
+                <div class="infc">
+                    <span style="display: flex;">
+                        <div class="ptl">Links</div>
+                    </span>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
     </div>
 
-    <script>
-        function seededRandom(seed) {
-            return function () {
-                seed ^= seed << 13;
-                seed ^= seed >>> 17;
-                seed ^= seed << 5;
-                return (seed < 0 ? ~seed + 1 : seed) % 1E9 / 1E9; // Scale to [0, 1)
-            }
-        }
-
-        function shuffleArray(array, seed) {
-            const random = seededRandom(seed);
-            for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
-            }
-            return array;
-        }
-
-        function shuffleImages(seed) {
-            const container = document.getElementById('imageContainer');
-            const headimgs = Array.from(container.getElementsByClassName('headimg'));
-            const shuffled = shuffleArray(headimgs, seed);
-
-            container.innerHTML = '';
-            shuffled.forEach(img => container.appendChild(img));
-        }
-
-        // Set a seed and shuffle images
-        const seed = 239;
-        shuffleImages(seed);
-
-    </script>
-
-
-    <script>
-        function animateTextWithCustomClarity(element, duration, steps, startClarity = 0, endClarity = 1) {
-            const targetText = element.textContent;
-            const length = targetText.length;
-            let currentText = Array(length).fill("");
-            const characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+[]{};':,.<>?/|";
-
-            const stepDuration = duration / steps;
-            const clarityRange = endClarity - startClarity;
-
-            function randomChar() {
-                return characters[Math.floor(Math.random() * characters.length)];
-            }
-
-            function updateText(step) {
-                const clarity = startClarity + (step / steps) * clarityRange;
-
-                for (let i = 0; i < length; i++) {
-                    if (Math.random() < clarity) {
-                        currentText[i] = targetText[i]; // Use correct character
-                    } else {
-                        currentText[i] = randomChar(); // Use random character
-                    }
-                }
-
-                element.textContent = currentText.join("");
-
-                if (step < steps) {
-                    setTimeout(() => updateText(step + 1), stepDuration);
-                }
-            }
-
-            updateText(0);
-        }
-
-        document.addEventListener("DOMContentLoaded", () => {
-            const element = document.querySelector(".wordChanger");
-            if (element) {
-                // Animate with custom clarity range
-                animateTextWithCustomClarity(element, 350, 5, 0.7, 1); // 2000ms, 6 steps, 20% to 80% clarity
-            }
-        });
-
-
-
-    </script>
-
-    <script>
-        // Sicherstellen, dass das Skript erst ausgeführt wird, wenn das DOM geladen ist
-        document.addEventListener("DOMContentLoaded", function () {
-            // Wähle alle Elemente mit der Klasse "headimg"
-            const containers = document.querySelectorAll(".headimg");
-
-            // Container für die eingefügte Grafik
-            const imgPasteContainer = document.getElementById("imgpaste");
-
-            // Event-Listener für jeden div.headimg hinzufügen
-            containers.forEach(container => {
-                container.addEventListener("click", function () {
-                    // Finde das <img>-Kind des geklickten Containers
-                    const img = container.querySelector("img");
-
-                    if (img) {
-                        // Erstellen einer Kopie des Bildes
-                        const clonedImg = img.cloneNode(true);
-
-                        // Entfernen der Klasse "imgcl" und Hinzufügen der Klasse "imgclin"
-                        clonedImg.classList.remove("imgcl");
-                        clonedImg.classList.add("imgclin");
-
-                        // Vorherigen Inhalt aus dem Container entfernen
-                        imgPasteContainer.innerHTML = "";
-
-                        // Das geklonte Bild in den Container einfügen
-                        imgPasteContainer.appendChild(clonedImg);
-                    }
-                });
-            });
-        });
-
-    </script>
-
+    <div id="overlay-hinweis">
+        <div class="overlay-content">
+            <p>This website is not yet optimized for smaller screens</p>
+            <button id="overlay-close-btn">I don't care :-)</button>
+        </div>
+    </div>
 
 </body>
+
+<script>
+    const buttons = document.querySelectorAll('.itm');
+    const pages = document.querySelectorAll('#content .page');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const pageName = button.dataset.page;
+
+            // Seiteninhalt umschalten
+            pages.forEach(page => {
+                page.style.display = page.classList.contains(pageName) ? 'block' : 'none';
+            });
+
+            // Alle Buttons deselektieren
+            buttons.forEach(btn => btn.classList.remove('slct'));
+
+            // Geklickten Button hervorheben
+            button.classList.add('slct');
+        });
+    });
+</script>
+
+<script>
+    function setAnimationDuration(duration) {
+        const loadingElement = document.getElementById("loading");
+        loadingElement.style.animationDuration = duration + "ms";
+    }
+
+    // Example: Set animation duration to 2 seconds (2000 milliseconds)
+    setAnimationDuration(2000);
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const sliders = document.querySelectorAll('.slider');
+        sliders.forEach(setupSlider);
+
+        // Globale Funktion: Alle Slideshows auf Slide 1 setzen
+        window.resetAllSlideshows = function () {
+            sliders.forEach(slider => {
+                slider._updateSlide(1);
+            });
+        }
+    });
+
+    function setupSlider(slider) {
+        let slideIndex = 1;
+        const slides = slider.querySelectorAll(".mySlides");
+        const dots = slider.querySelectorAll(".demo");
+        const numbers = slider.querySelectorAll(".number");
+        const captionText = slider.querySelector("#caption");
+        const prevBtn = slider.querySelector(".prev");
+        const nextBtn = slider.querySelector(".next");
+
+        function updateSlide(n) {
+            if (n > slides.length) slideIndex = 1;
+            else if (n < 1) slideIndex = slides.length;
+            else slideIndex = n;
+
+            // Show/hide slides
+            slides.forEach(slide => slide.style.display = "none");
+            slides[slideIndex - 1].style.display = "flex";
+
+            // Dots
+            dots.forEach(dot => dot.classList.remove("active"));
+            if (dots[slideIndex - 1]) {
+                dots[slideIndex - 1].classList.add("active");
+                if (captionText) captionText.innerHTML = dots[slideIndex - 1].alt;
+            }
+
+            // Highlight number buttons
+            numbers.forEach(num => num.classList.remove("highlight"));
+            if (numbers[slideIndex - 1]) {
+                numbers[slideIndex - 1].classList.add("highlight");
+            }
+        }
+
+        // Events
+        if (prevBtn) prevBtn.onclick = () => updateSlide(slideIndex - 1);
+        if (nextBtn) nextBtn.onclick = () => updateSlide(slideIndex + 1);
+        dots.forEach((dot, i) => dot.onclick = () => updateSlide(i + 1));
+        numbers.forEach(num =>
+            num.onclick = () => updateSlide(parseInt(num.dataset.index))
+        );
+
+        // Start mit Slide 1
+        updateSlide(slideIndex);
+
+        // Referenz auf Funktion speichern → für global reset
+        slider._updateSlide = updateSlide;
+    }
+</script>
+
+<script>
+    function scaleToFit() {
+        const baseWidth = 2560;
+        const baseHeight = 1289;
+
+        // Überprüfung, ob der Bildschirm kleiner als 768px (typische Mobile-Gerätebreite) ist
+        const isMobile = window.innerWidth < 900;
+
+        if (isMobile) {
+            // Auf mobilen Geräten keine Skalierung anwenden, stattdessen standardmäßige Darstellung
+            document.getElementById('scale-wrapper').style.transform = 'scale(1)';
+            return;
+        }
+
+        // Berechnung der Skalierung für größere Bildschirme
+        const scaleX = window.innerWidth / baseWidth;
+        const scaleY = window.innerHeight / baseHeight;
+        const scale = Math.min(scaleX, scaleY); // Skalierung basierend auf der kleineren Dimension
+
+        const wrapper = document.getElementById('scale-wrapper');
+        wrapper.style.transform = `scale(${scale})`;
+    }
+
+    window.addEventListener('resize', scaleToFit);
+    window.addEventListener('load', scaleToFit);
+
+
+</script>
+
+<!-- mobile -->
+<script>
+    function checkViewport() {
+        const overlay = document.getElementById('overlay-hinweis');
+
+        // Zeige nur, wenn Viewport < 900px und noch nicht geschlossen
+        if (window.innerWidth < 900 && !sessionStorage.getItem('overlayClosed')) {
+            overlay.style.display = 'block';
+        } else {
+            overlay.style.display = 'none';
+        }
+    }
+
+    document.getElementById('overlay-close-btn').addEventListener('click', () => {
+        document.getElementById('overlay-hinweis').style.display = 'none';
+        sessionStorage.setItem('overlayClosed', 'true'); // Speichert das Schließen für die aktuelle Session
+    });
+
+    // Direkt beim Laden checken
+    checkViewport();
+
+    // Bei Resize checken
+    window.addEventListener('resize', checkViewport);
+
+</script>
 
 </html>
