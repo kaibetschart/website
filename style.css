@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "hb";
-    src: url(fnt/HelveticaNeueCyr-Bold.otf);
+    font-family: "HaasGroteskBold";
+    src: url(fnt/HaasGroteskBold.otf);
 }
 
 @font-face {
@@ -26,6 +26,11 @@
 @font-face {
     font-family: "fgr";
     src: url(fnt/Franklin\ Gothic\ Book\ Regular.ttf);
+}
+
+@font-face {
+    font-family: "HaasGrotesk";
+    src: url(fnt/HaasGrotesk.otf);
 }
 
 
@@ -107,7 +112,7 @@ body {
 
 .mn {
     display: flex;
-    font-family: "fgr";
+    font-family: "HaasGrotesk";
     color: rgb(0, 0, 0);
     /* border-top: 2px solid black; */
     width: fit-content;
@@ -115,7 +120,7 @@ body {
 }
 
 .scrollContainer {
-    font-family: "fgr";
+    font-family: "HaasGrotesk";
     /* font-family: sans-serif;
     font-size: x-small; */
     /* text-transform: uppercase; */
@@ -161,7 +166,7 @@ body {
 
 
 .ahifpw {
-    font-family: "hb" !important;
+    font-family: "HaasGroteskBold" !important;
 }
 
 
@@ -215,7 +220,7 @@ body {
 
 .mnp {
     display: flex;
-    font-family: "fgr";
+    font-family: "HaasGrotesk";
     color: rgb(0, 0, 0);
     border-top: 2px solid black;
     width: fit-content;
@@ -227,7 +232,7 @@ body {
 
 .mne {
     display: flex;
-    font-family: "fgr";
+    font-family: "HaasGrotesk";
     color: rgb(0, 0, 0);
     width: fit-content;
     margin-top: -5px;
@@ -278,9 +283,9 @@ body {
 }
 
 .slct:not(.dont) {
-    font-family: "hb";
-    font-size: 15px;
-    transform: translateY(1px);
+    font-family: "HaasGroteskBold";
+    /* font-size: 15px;
+    transform: translateY(1px); */
 }
 
 .container {
@@ -564,7 +569,7 @@ body {
 
 
 .highlight {
-    font-family: "hb" !important;
+    font-family: "HaasGroteskBold" !important;
     /* font-size: 17px; */
     color: black !important;
 }
@@ -583,7 +588,7 @@ body {
 
 .infc {
     padding-top: 10px;
-    font-family: "fgr";
+    font-family: "HaasGrotesk";
 }
 
 .wt {
@@ -591,7 +596,8 @@ body {
 }
 
 .ptl {
-    font-family: "hb";
+    /* font-family: "HaasGroteskBold"; */
+    text-transform: uppercase;
 }
 
 .ptxt {
@@ -658,7 +664,7 @@ body {
     /* margin-left: 8px; */
     background-color: rgb(255, 241, 46);
     border: 1px solid black;
-    font-family: "fgr";
+    font-family: "HaasGrotesk";
     margin-bottom: -10px;
 }
 
