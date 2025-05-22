@@ -142,7 +142,7 @@ body {
 
 .mnhead {
     display: flex;
-    border-top: 2px solid black;
+    /* border-top: 2px solid black; */
     width: fit-content;
 
 }
@@ -220,9 +220,11 @@ body {
 
 .mnp {
     display: flex;
-    font-family: "HaasGrotesk";
+    font-family: sans-serif;
+    font-size: x-small;
+    letter-spacing: 1px;
     color: rgb(0, 0, 0);
-    border-top: 2px solid black;
+    /* border-top: 2px solid black; */
     width: fit-content;
 }
 
@@ -240,7 +242,7 @@ body {
 }
 
 .brd {
-    border-right: 2px solid black;
+    border-right: 1px solid black;
 }
 
 .spcmn {
@@ -289,7 +291,7 @@ body {
 }
 
 .container {
-    border-top: 2px solid black;
+    /* border-top: 2px solid black; */
     width: 1100px;
     /* border-bottom: 2px solid black; */
     height: 500px;
@@ -398,6 +400,17 @@ body {
     border-bottom: 2px solid black;
     gap: 5px;
     align-items: flex-start;
+}
+
+.mySlidesHome {
+    display: flex;
+    width: 1100px;
+    height: 490px;
+    padding-bottom: 5px;
+    gap: 5px;
+    align-items: flex-start; 
+    border: 2px solid black;
+
 }
 
 .mySlidessm {
@@ -608,6 +621,10 @@ body {
 .txmain {
     width: 350px;
     padding-right: 30px;
+    font-family: sans-serif;
+    font-size: x-small;
+    letter-spacing: 1px;
+    line-height: 13px;
 }
 
 .spc {
