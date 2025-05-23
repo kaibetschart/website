@@ -577,6 +577,14 @@ body {
     /* width="671" height="490" */
 }
 
+.wdVVdfx {
+    width: calc(76% + 34px);
+    height: 100%;
+    object-fit: contain;
+    align-items: flex-start;
+    display: flex;
+}
+
 
 
 
@@ -610,7 +618,7 @@ body {
 
 .ptl {
     /* font-family: "HaasGroteskBold"; */
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
 }
 
 .ptxt {
