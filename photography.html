@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kaibetschart.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="overlays.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="icon" href="icn/bts.gif" type="image/gif">
+</head>
+
+<body>
+    <div class="project-page">
+        <div>
+            <div class="project-sidepanel">
+                <div class="project-sidepanel-menu col">
+                    <a href="visual-works.html">
+                        <div class="menu-sidebar ">
+                            <div class="arrow-left-white"></div>
+                            <div class="menu-home-white">Go back</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col col1 background-black">
+                    <div class="ph-sub">Galleries:</div>
+                    <a href="img-series.html" class="ph-sub-entry">Summer 2024</a>
+                </div>
+                <div class="col col-il background-black"></div>
+            </div>
+            <div id="img-overlay">
+                <div class="overlay-wrapper">
+                    <img id="overlay-img" src="" alt="Full Size">
+                </div>
+            </div>
+            <div class=" background-black">
+                <div class="col-sp-alt">
+                    <div class="project-div-ph" id="grid">
+                        <div class="project-image-container">
+                            <img src="img/fotografie/DSC_7472.jpg" class="project-image-pha ok" alt="">
+                        </div>
+                        <div class="project-image-container">
+                            <img src="img/fotografie/Untitled Clip 02.00_02_45_08.Still047.png"
+                                class="project-image-pha" alt="">
+                        </div>
+
+                        <div class="project-image-container">
+                            <img src="img/fotografie/DSC_3177g_2.jpg" class="project-image-pha" alt="">
+                        </div>
+                        <div class="project-image-container">
+                            <img src="img/fotografie/DSC02549.jpg" class="project-image-pha" alt="">
+                        </div>
+                        <div class="project-image-container">
+                            <img src="img/fotografie/DSC04045_sl1.jpg" class="project-image-pha" alt="">
+                        </div>
+                        <div class="project-image-container">
+                            <img src="img/fotografie/DSC_8327_1.jpg" class="project-image-pha" alt="">
+                        </div>
+
+
+                        <div class="project-image-container">
+                            <img src="img/fotografie/DSC_2493_2.jpg" class="project-image-pha" alt="">
+                        </div>
+                        <div class="project-image-container">
+                            <img src="img/fotografie/DSC02366.JPG" class="project-image-pha" alt="">
+                        </div>
+                        <div class="project-image-container">
+                            <img src="img/fotografie/DSC_0789_2.JPG" class="project-image-pha" alt="">
+                        </div>
+
+
+
+
+                        <div class="project-image-container">
+                            <img src="img/fotografie/DSC02652.jpg" class="project-image-pha" alt="">
+                        </div>
+
+                        <div class="project-image-container">
+                            <img src="img/fotografie/IMAG0596.JPG" class="project-image-pha" alt="">
+                        </div>
+
+                        <div class="project-image-container">
+                            <img src="img/fotografie/Untitled Clip 02.00_42_27_02.Still203.png"
+                                class="project-image-pha" alt="">
+                        </div>
+                        <div class="project-image-container">
+                            <img src="img/fotografie/DSC_3435g.jpg" class="project-image-pha" alt="">
+                        </div>
+
+
+                        <div class="project-image-container">
+                            <img src="img/fotografie/Untitled Clip 02.00_17_23_23.Still217.png"
+                                class="project-image-pha" alt="">
+                        </div>
+                        <div class="project-image-container">
+                            <img src="img/fotografie/DSC_2610.jpg" class="project-image-pha" alt="">
+                        </div>
+                        <div class="project-image-container">
+                            <img src="img/fotografie/Untitled Clip 02.00_12_30_02.Still078.png"
+                                class="project-image-pha" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const overlay = document.getElementById('img-overlay');
+            const overlayImg = document.getElementById('overlay-img');
+
+            document.querySelectorAll('.project-div-ph img').forEach(img => {
+                img.addEventListener('click', e => {
+                    overlayImg.src = e.target.src;
+                    overlay.style.display = 'flex';
+                });
+            });
+
+            overlay.addEventListener('click', () => {
+                overlay.style.display = 'none';
+                overlayImg.src = '';
+            });
+        </script>
+
+</body>
+
+
+</html>

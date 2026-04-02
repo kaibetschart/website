@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kaibetschart.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="overlays.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="icon" href="icn/bts.gif" type="image/gif">
+</head>
+
+<body>
+    <a href="index.html" class="menu-head">
+        <div class="menu-sidebar">
+            <div class="arrow-left"></div>
+            <div href="visual-works.html" class="menu-home">Go back</div>
+        </div>
+    </a>
+    <div class="info">
+        <div class="info-container">
+            <div class="info-text">
+                <div class="info-text-container">
+                    Audio works (Coming soon)
+                </div>
+            </div>
+
+            <div class="image-container-info">
+                <div id="image-container-info">
+                    <img src="img/audio/inline.png" alt="">
+                    <img src="img/fl/harmor block.PNG" alt="">
+                    <img src="img/fl/mhmmm.PNG" alt="">
+                    <img src="img/audio/repeater patch.png" alt="">
+                    <img src="img/audio/pmc-01.png" alt="">
+                    <img src="img/fl/liquid.PNG" alt="">
+                    <img src="img/fl/mouth.PNG" alt="">
+                    <img src="img/audio/maxmsp-mod.png" alt="">
+                    <img src="img/fl/harmor prism.PNG" alt="">
+                </div>
+            </div>
+
+            <div class="info-text">
+                <div class="info-text-container">
+                    References <br><br>
+                    Sound design <br>
+                    Next hype - Orbet<br>
+                    Next hype - Princess international crown  <br>
+                    Next hype - Roadrunner: RX7 Launch<br>
+                    Next hype - Swisscom: Human x Tech<br><br>
+                    Mix / Master <br>
+                    Detonik - Wait For Me (Master) <br>
+                    Detonik - Wicked (Master) <br>
+                    Rezer - Transcendence (Mix / Master) <br> <br>
+                    Various solo music projects
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const container = document.getElementById("image-container-info");
+        const images = Array.from(container.querySelectorAll("img"));
+
+        let currentIndex = 0;
+
+        const normalInterval = 600;
+        const longPause = 2300;
+
+        let nextPauseTrigger = getRandomPauseTrigger();
+        let counterSincePause = 0;
+
+        images.forEach((img, i) => {
+            img.style.display = i === 0 ? "block" : "none";
+        });
+
+        function getRandomPauseTrigger() {
+            return Math.floor(Math.random() * 4) + 4;
+        }
+
+        function showNextImage() {
+            images[currentIndex].style.display = "none";
+
+            currentIndex = (currentIndex + 1) % images.length;
+
+            images[currentIndex].style.display = "block";
+
+            counterSincePause++;
+
+            let delay = normalInterval;
+
+            if (counterSincePause >= nextPauseTrigger) {
+                delay = longPause;
+
+                counterSincePause = 0;
+                nextPauseTrigger = getRandomPauseTrigger();
+            }
+
+            setTimeout(showNextImage, delay);
+        }
+
+        setTimeout(showNextImage, normalInterval);
+    </script>
+
+</body>
+
+
+</html>

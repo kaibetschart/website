@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kaibetschart.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="overlays.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="icon" href="icn/bts.gif" type="image/gif">
+</head>
+
+<body>
+    <div class="project-page">
+        <div>
+            <div id="img-overlay">
+                <div class="overlay-wrapper">
+                    <img id="overlay-img" src="" alt="Full Size">
+                </div>
+            </div>
+            <div class="project-sidepanel">
+                <div class="project-sidepanel-menu col">
+                    <a href="visual-works.html">
+                        <div class="menu-sidebar ">
+                            <div class="arrow-left-white"></div>
+                            <div class="menu-home-white">Go back</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col col1 background-black">
+                </div>
+                <div class="col col-il background-black"></div>
+            </div>
+            <div class="project-grid-il background-black">
+                <div class="col col1">
+                    <div class="project-image-container">
+                        <img src="img/pluginm2.png" class="project-image-il" alt="">
+                    </div>
+
+                    <div class="project-image-container">
+                        <img src="img/zeichnungen/inweb.png" class="project-image-il" alt="">
+                    </div>
+                    <div class="project-image-container">
+                        <img src="img/zeichnungen/lscape drawing.png" class="project-image-il" alt="">
+                    </div>
+
+                </div>
+                <div class="col">
+
+                    <div class="project-image-container">
+                        <img src="img/zeichnungen/zeichung_01.jpg" class="project-image-il" alt="">
+                    </div>
+                    <div class="project-image-container">
+                        <img src="img/zeichnungen/IMG_2834.jpg" class="project-image-il" alt="">
+                    </div>
+
+                    <div class="project-image-container">
+                        <img src="img/zeichnungen/green copy 2gross white (0-00-00-00).png" class="project-image-il"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="project-image-container">
+                        <img src="img/zeichnungen/IMG_2837.jpg" class="project-image-il" alt="">
+                    </div>
+                    <div class="project-image-container">
+                        <img src="img/zeichnungen/linkedcard technology - コピー.png" class="project-image-il" alt="">
+                    </div>
+                    <div class="project-image-container">
+                        <img src="img/zeichnungen/zeichnung - Kopie - コピー.png" class="project-image-il" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        const overlay = document.getElementById('img-overlay');
+        const overlayImg = document.getElementById('overlay-img');
+
+        document.querySelectorAll('.project-image-container img').forEach(img => {
+            img.addEventListener('click', e => {
+                overlayImg.src = e.target.src;
+                overlay.style.display = 'flex';
+            });
+        });
+
+        overlay.addEventListener('click', () => {
+            overlay.style.display = 'none';
+            overlayImg.src = '';
+        });
+    </script>
+
+</body>
+
+
+</html>
