@@ -308,7 +308,7 @@
        .overlay-ap,
        .gid-overlay-rr {
            display: block;
-           height: 100%;
+           height: auto;
        }
 
        .gid-overlay-ap img {
@@ -319,8 +319,8 @@
        }
 
        .gid-overlay-rr img {
-        height: auto;
-           margin-bottom: 10px;
+           height: auto;
+           /* margin-bottom: 10px; */
        }
 
        .gid-overlay-ap {
@@ -331,6 +331,9 @@
        .gid-overlay-rr {
            width: calc(100% - 22px);
            padding: 20px 0px 0px 10px;
+           display: grid;
+           margin-bottom: 10px;
+           justify-content: left;
        }
 
        .gid-overlay-rr img {
