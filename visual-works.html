@@ -289,7 +289,7 @@
             <div>Send me an E-Mail at <a style="display: inline !important;"
                     href="mailto:betschart.kaai@gmail.com">betschart.kaai@gmail.com</a> <br> or use the contact form
                 below.</div> <br>
-            <form id="contact-form">
+            <form class="contact-form">
                 <p>Name</p>
                 <input type="text" name="user_name" required />
                 <p>E-Mail</p>
@@ -300,7 +300,7 @@
                 <textarea name="message"></textarea>
                 <button type="submit">Send</button>
             </form>
-            <div id="status"></div>
+            <div class="status"></div>
 
         </div>
 
@@ -583,7 +583,7 @@
             <div>Send me an E-Mail at <a style="display: inline !important;"
                     href="mailto:betschart.kaai@gmail.com">betschart.kaai@gmail.com</a> <br> or use the contact form
                 below.</div> <br>
-            <form id="contact-form">
+            <form class="contact-form">
                 <p>Name</p>
                 <input type="text" name="user_name" required />
                 <p>E-Mail</p>
@@ -594,7 +594,7 @@
                 <textarea name="message"></textarea>
                 <button type="submit">Send</button>
             </form>
-            <div id="status"></div>
+            <div class="status"></div>
 
         </div>
 
@@ -785,30 +785,31 @@
             emailjs.init("ICG9lWozHI-h3Ry2t");
         })();
 
-        const form = document.getElementById("contact-form");
-        const status = document.getElementById("status");
+        const forms = document.querySelectorAll(".contact-form");
 
-        form.addEventListener("submit", function (e) {
-            e.preventDefault();
+        forms.forEach((form) => {
+            const status = form.nextElementSibling;
 
-            status.innerText = "Sending...";
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
 
-            emailjs.sendForm(
-                "service_u6tb9op",
-                "template_9ehghbl",
-                this
-            )
-                .then(() => {
-                    status.innerText = "Message sent successfully.";
-                    form.reset();
-                })
-                .catch((error) => {
-                    status.innerText = "Failed to send message.";
-                    console.error(error);
-                });
+                status.innerText = "Sending...";
+
+                emailjs.sendForm(
+                    "service_u6tb9op",
+                    "template_9ehghbl",
+                    form
+                )
+                    .then(() => {
+                        status.innerText = "Message sent successfully.";
+                        form.reset();
+                    })
+                    .catch((error) => {
+                        status.innerText = "Failed to send message.";
+                        console.error(error);
+                    });
+            });
         });
-
-
 
     </script>
 
