@@ -417,7 +417,6 @@
 
    .project-image-container-lo {
        width: 100%;
-       aspect-ratio: 1 / 1;
        display: flex;
        justify-content: center;
        align-items: center;
