@@ -649,7 +649,7 @@
        }
 
        .project-page .col {
-           width: calc(100% - 12px);
+           width: calc(100% - 10px);
        }
 
        .float-text {
