@@ -1,3 +1,7 @@
+   body {
+    font-family: 'Times New Roman', Times, serif;
+   }
+   
    .project-grid {
        display: flex;
        padding-right: 10px
@@ -238,6 +242,7 @@
        border-radius: 0;
        background: white;
        border: none;
+       margin-top: -10px;
    }
 
    input[type=range].styled-slider::-webkit-slider-runnable-track {
