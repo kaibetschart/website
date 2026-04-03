@@ -312,7 +312,7 @@
 
        .gid-overlay-ap img {
            max-width: 100%;
-           height: fit-content;
+           height: auto;
            width: calc(100% - 2px);
            margin-bottom: 10px;
        }
