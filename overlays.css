@@ -305,7 +305,8 @@
        }
 
        .gid-overlay-ap,
-       .overlay-ap, .gid-overlay-rr {
+       .overlay-ap,
+       .gid-overlay-rr {
            display: block;
            height: 100%;
        }
@@ -318,9 +319,7 @@
        }
 
        .gid-overlay-rr img {
-           max-width: 100%;
-           height: auto;
-           width: 100%;
+        height: auto;
            margin-bottom: 10px;
        }
 
@@ -332,6 +331,15 @@
        .gid-overlay-rr {
            width: calc(100% - 22px);
            padding: 20px 0px 0px 10px;
+       }
+
+       .gid-overlay-rr img {
+           max-width: 100%;
+           max-height: calc(100vh - 20px);
+       }
+
+       .imgkm-container {
+           height: calc(100vh - 0px);
        }
 
    }
