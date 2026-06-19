@@ -5,75 +5,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kaibetschart.com</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="icn/bts.gif" type="image/gif">
+    <style>
+        #player-control-overlay {
+            display: none;
+        }
+
+        #copyPopup {
+            position: absolute;
+            display: none;
+            background: white;
+            color: #000;
+            border: 1px solid #888;
+            padding: 5px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, .2);
+            z-index: 1000;
+        }
+
+        #copyPopup::after {
+            content: "";
+            position: absolute;
+            left: 12px;
+            bottom: -8px;
+            border-width: 8px 8px 0;
+            border-style: solid;
+            border-color: #f0f0f0 transparent;
+        }
+
+        #copyPopup::before {
+            content: "";
+            position: absolute;
+            left: 11px;
+            bottom: -9px;
+            border-width: 9px 9px 0;
+            border-style: solid;
+            border-color: #888 transparent;
+        }
+    </style>
 </head>
 
 <body>
 
-
-    <div class="body-menu">
-        <div class="cnfl">
-            <div class="mobile-container">
-                <div class="mobile">
-                    <img class="logo" src="icn/log.png" alt="">
-
-                    <div class="tlh">
-                        <a href="index.html" class="tblock">kaibetschart.com</a>
-                        <a class="coel">© global</a>
-                        <div class="sbt">portfolio & more</div>
-                    </div>
-                </div>
-            </div>
+    <!-- <div style="font-family: MS UI GOTHIC,Osaka,Helvetica,sans-serif; font-size: 10px; letter-spacing: 1px;">Music</div> -->
 
 
-            <div class="sbtfl">Welcome to my portfolio. It
-                contains affiliated and comissioned projects as well as insights and ones still ongoing. </div>
-            <div class="db">
+    <!-- <img src="icn/bts.gif" width="150px"> -->
+    <i>(currently in progress) — website updated on 19. of june 2026</i>
+    <h1>VISUALS</h1>
+    <br>
+    <br>
+    <br>
+    <h2>HOW SPECIAL</h2>
 
-                <div class="divide">
-                    <div class="leer">
-                        <img src="icn/keyholeeye_e0.gif" class="">
-                    </div>
-                    <div class="info">
-                        <div class="infottl" style="margin-left: -45px;">What are you interested in?
-                        </div>
-                        <div class="list link-container">
-                            <a class="listlol" data-img="img1" style="margin-left: 16px; margin-top: 6px;"
-                                href="visual-works.html">Visual works</a>
-                            <a class="listlol" data-img="img2" style="margin-left: 39px;" href="audio-works.html">Audio
-                                works</a>
-                            <a class="listlol" data-img="img3" style="    margin-left: 40px;" href="info.html">Info</a>
-                            <a class="listlol" data-img="img4" style="    margin-left: 20px;"
-                                href="contact.html">Contact</a>
-                        </div>
-                    </div>
-                </div>
+    <img src="img/invest_today_wide.gif" style="max-width: 100%;">
+    <img src="img/My_Eye.png" height="200">
+    <img src="img/anynumber.png" height="200">
+    <br>
+    <br>
+    <hr>
 
-            </div>
 
-            <div class="abvbtm">
-                <div class="btblock">
-                    <div class="cpr greyed">Redesigning the world around you — kaibetschart.com 2026</div>
-                </div>
-            </div>
+    <br>
+    <h2>INDRUIPEN</h2>
+    <img src="img/ndrpn.png" width="740" style="background-color: grey; max-width: 100%;">
+    <br>
+    <br>
+    <hr>
 
-        </div>
+    <br>
+    <h2>ILLUSTRATION</h2>
+    <img src="img/il.jpg" style="max-width: 100%; max-height: 500px;">
+    <img src="img/pluginm3.png" style="max-width: 100%; max-height: 500px;">
+    <br>
+    <br>
+    <hr>
 
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                const items = document.querySelectorAll(".listlol");
-                items.forEach((item, index) => {
-                    setTimeout(() => {
-                        item.style.opacity = "1";
-                        item.style.transform = "translateY(0)";
-                    }, index * 200);
-                });
-            });
-        </script>
+    <br>
+    <h2>LOGO & SYMBOL WORK</h2>
+    <img src="img/3k Comp 6 (0-00-00-00)_2 (0-00-00-00).png">
+    <img src="img/logos/icon.png" height="400" style="background-color: #ebebeb;">
+    <img src="img/logos/AB-GREY2.jpg" height="400">
+    <img src="img/logos/au.png" style="background-color: rgb(0, 0, 0);">
+    <br>
+    <br>
+    <hr>
 
+    <br>
+    <h2>WANTED WOODS </h2>
+    <video autoplay loop muted playsinline style="max-width: 700px; width: 100%;">
+        <source src="img/WW.mp4" type="video/mp4">
+    </video>
+    <br>
+    <br>
+    <hr>
+
+
+    <br>
+    <h2>KREATIVMARKT TOGGENBURG</h2>
+    <img src="img/kreativmarkt_toggenburg.jpg" style="max-width: 100%; max-height: 500px;">
+    <br>
+    <br>
+    <hr>
+
+    <br>
+    <h2>TRANSITWERK</h2>
+    <img src="img/fotografie/DSC_7472.jpg" style="max-width: 100%; max-height: 500px;">
+    <br>
+    <br>
+    <hr>
+
+    <h1>INFORMATION</h1>
+    <br>
+    <br>
+    <br>
+
+
+    <h2>Services and expertise</h2>
+    <p>
+        Animation <br>
+        Coloring <br>
+        Editorial <br>
+        Identity <br>
+        Illustration <br>
+        Logo <br>
+        Web <br>
+    </p>
+    <br>
+    <br>
+
+    <h2>Contact</h2>
+    <div>
+        Send an E-Mail to <span id="copyText"
+            style="cursor: pointer; text-decoration: underline;">betschart.kaai@gmail.com</span>.
     </div>
+    <br>
+    <br>
 
+    <img src="icn/log.png">
+
+
+    <div id="copyPopup">Copied!</div>
+
+    <style>
+
+    </style>
+
+    <script>
+        const text = document.getElementById("copyText");
+        const popup = document.getElementById("copyPopup");
+
+        text.addEventListener("click", function (e) {
+            navigator.clipboard.writeText(this.textContent)
+                .then(() => {
+                    popup.style.left = (e.pageX - 10) + "px";
+                    popup.style.top = (e.pageY - 45) + "px";
+                    popup.style.display = "block";
+
+                    clearTimeout(popup.timer);
+                    popup.timer = setTimeout(() => {
+                        popup.style.display = "none";
+                    }, 1500);
+                })
+                .catch(console.error);
+        });
+    </script>
 
 
 </body>

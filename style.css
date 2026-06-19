@@ -1,344 +1,67 @@
- @font-face {
-     font-family: "Walter-Regular";
-     src: url("fonts/Walter-Regular.ttf");
- }
-
- body {
-     /* font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: x-small; */
-     margin: 0;
- }
-
- a {
-     width: fit-content;
-     display: block;
-     color: black;
- }
-
-
- a:visited {
-     color: black;
-
- }
-
-
- .grid {
-     display: flex;
-     padding-right: 10px;
-     padding-top: 10px;
-     padding-bottom: 6px;
- }
-
- .vw {
-     display: flex;
- }
-
- .mb {
-     display: none;
- }
-
- .col {
-     width: 33%;
-     /* padding-right: 10px; */
-     padding-left: 10px;
-     /* padding-top: 10px; */
- }
-
- .col-mb {
-     width: 50%;
-     /* padding-right: 10px; */
-     padding-left: 10px;
-     /* padding-top: 10px; */
- }
-
-
-
- /* .col1 {
-    background-color: rgb(211, 211, 211);
+/* .headTitle {
+    font-family: "GaramondPremrPro";
+    font-size: 19px;
+    text-align: center;
+    text-transform: uppercase;
 }
-.col2 {
-    background-color: rgb(243, 243, 235);
+
+.headSubtitle {
+    font-size: 13px;
+    font-style: italic;
+    text-align: center;
 }
-.col3 {
-    background-color: rgb(156, 187, 202);
+
+.headBar {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.headBar div {
+    display: block;
+}
+
+.headBar a {
+    color: black;
+    text-transform: uppercase;
+    font-size: 13px;
+    display: inline-block;
+    line-height: 19px;
+    font-family: helvetica;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.bRight {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid black;
+
+}
+
+.headInfo {
+    text-align: center;
+    font-style: italic;
+}
+
+
+
+
+
+.blockFlex,
+.inletFlex {
+    display: flex;
+}
+
+.blockFlex {
+    margin-top: 5px;
+}
+
+.inletItem {
+    align-content: center;
+    padding: 10px;
+}
+
+.inletFlex img {
+    background-color: white;
+
 } */
-
- .col2,
- .col3 {
-     border-left: 1px solid black;
-     margin-left: 10px;
- }
-
-
-
-
- .block-text {
-     /* font-family: "Walter-Regular";
-     font-size: 35px; */
-
-     /* font-size: 25px; */
-     text-decoration: underline;
-     max-width: 600px;
-     /* max-width: 500px; */
-     cursor: pointer;
-     width: fit-content;
- }
-
- .letter {
-     text-transform: uppercase;
- }
-
- .block {
-     width: 100%;
-     /* margin-bottom: 40px; */
-     margin-bottom: 10px;
-     padding-bottom: 10px;
-     border-bottom: 1px solid black;
- }
-
-
- .text-block {
-     width: 100%;
-     /* margin-bottom: 40px; */
-     margin-bottom: 10px;
-     padding-bottom: 6px;
-     border-bottom: 1px solid black;
- }
-
- .textonly {
-     margin-top: -4px;
- }
-
- .lineoff {
-     border-bottom: 0px;
-     padding-bottom: 0px;
- }
-
- .text-top {
-     margin-top: -4px;
- }
-
- .image-container {
-     font-size: 0;
-     padding-bottom: 6px;
- }
-
- .image {
-     width: 300px;
-     /* width: 260px; */
-     max-width: 100%;
- }
-
-
- .outline {
-     border: 1px solid rgb(219, 219, 219);
-
- }
-
- .background-c1 {
-     /* background-color: rgb(125, 131, 106); */
- }
-
- .background-black {
-     background-color: black;
- }
-
- .background-white {
-     background-color: white;
- }
-
- .background-black-border {
-     border: 1px solid rgb(77, 77, 77);
- }
-
-
-
-
-
-
-
- .bottom-gap {
-     margin-bottom: 4px;
- }
-
-
-
-
-
-
-
- .text {
-     border-top: 1px solid black;
-
-     margin-left: 10px;
-     margin-right: 10px;
- }
-
- /* .title {
-     padding-top: 6px;
-     padding-bottom: 6px;
- } */
-
- .col div {
-     /* text-transform: lowercase; */
- }
-
- .status {
-     margin-top: 10px;
- }
-
- form {
-     display: block;
- }
-
- input,
- textarea {
-     display: block;
-     margin: 0px 0px 10px 0px;
- }
-
- p {
-     display: block;
-     margin: 0px 0px 0px 0px;
- }
-
- textarea {
-     height: 60px;
- }
-
- .unblock {
-     margin-bottom: 20vh;
- }
-
- .menu-head {
-     padding: 10px;
- }
-
-
-
- .contact {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     height: calc(65vh - 58px);
-     width: 100vw;
-     position: fixed;
- }
-
- .contact-container {
-     margin: 10px;
-
- }
-
- .contact input {
-     width: 307px;
- }
-
- .contact textarea {
-     width: 307px;
- }
-
- .contact textarea {
-     height: 100px;
- }
-
- .info {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     height: calc(65vh);
-     width: 100vw;
-     position: fixed;
- }
-
- .info-text {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     width: 100vw;
- }
-
- .info-text-container {
-     margin: 10px;
-     width: 350px;
- }
-
- #image-container-info {
-     width: 100vw;
-     height: 300px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
-
- #image-container-info img {
-     max-height: 300px;
-     border: 1px solid rgb(219, 219, 219);
-     max-width: calc(100% - 20px);
- }
-
- .image-container-info {
-     width: 100vw;
-     max-height: 300px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
-
- .image-container-info img {
-     max-height: 300px;
-     max-width: calc(100% - 20px);
- }
-
-
-
-
-
-
- @media screen and (max-width: 768px) {
-
-     .mb {
-         display: flex;
-     }
-
-     .vw {
-         display: none;
-     }
-
-     .contact,
-     .info {
-         position: static;
-         display: inline;
-     }
-
-     .info-text-container {
-         width: 420px;
-     }
-
-     .image-container-info img {
-         max-height: 330px;
-     }
-
-     .image-container-info {
-         max-height: 330px;
-     }
-
-
- }
-
- @media screen and (max-height: 851px) {
-
-     .contact,
-     .info {
-         /* height: calc(100vh - 78px); */
-     }
-
-     .contact,
-     .info {
-         position: static;
-         display: inline;
-     }
-
-
-
- }

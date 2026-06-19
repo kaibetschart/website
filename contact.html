@@ -6,38 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kaibetschart.com</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="overlays.css">
-    <link rel="stylesheet" href="projects.css">
     <link rel="icon" href="icn/bts.gif" type="image/gif">
+
 </head>
 
 <body>
-    <a href="index.html" class="menu-head">
-        <div class="menu-sidebar">
-            <div class="arrow-left"></div>
-            <div href="visual-works.html" class="menu-home">Go back</div>
+
+    <div class="blockFlex">
+        <div class="blockInlet"></div>
+        <div class="blockContainer">
+            <div class="inletFlex">
+                <div class="inletItem">
+                    <div class="headTitle">Kai Betschart</div>
+                    <div class="headSubtitle">Portfolio <br> <br>Featuring audio and visual works </div>
+                </div>
+                <div class="inletItem ">
+                    <div class="headInfo">LATEST <br></div>
+                    <div class="headInfo">Pure Data patch available</div>
+                </div>
+                <div class="inletItem"><img src="icn/logThreshw.png" alt=""></div>
+            </div>
+            <div class="headBar">
+                <a class="bRight" href="home">Visual</a>
+                <a class="bRight" href="home">Audio</a> 
+                <a href="home">Information</a> 
+                <a class="bRight" href="home">Contact</a>
+                <a href="home">Instagram</a>
+            </div>
+            <main class="bodyBlock">
+                <div class="container contact">
+                    <div class="">
+                        Services and expertise <br><br>
+                        Animation <br>
+                        Editorial <br>
+                        Identity <br>
+                        Illustration <br>
+                        Logo <br>
+                        Print <br>
+                        Web <br>
+                    </div>
+                    <br> <br> 
+                    <div data-mobile-col="3" class="">
+                        <div class="">Contact</div> <br> 
+                        <div>Send an E-Mail to <a
+                                style="display: inline !important; text-transform: lowercase !important;"
+                                href="mailto:betschart.kaai@gmail.com">betschart.kaai@gmail.com</a> <br> or use the
+                            contact
+                            form
+                            below.</div> <br>
+                        <form class="contactForm">
+                            <p>Name</p>
+                            <input type="text" name="user_name" required />
+                            <p>E-Mail</p>
+                            <input type="email" name="user_email" required />
+                            <p>Subject</p>
+                            <input type="subject" name="subject" required />
+                            <p>Message</p>
+                            <textarea name="message"></textarea> <br>
+                            <button type="submit">Send</button>
+                        </form>
+                        <div class="status"></div>
+                    </div>
+                </div>
+            </main>
         </div>
-    </a>
-    <div class="contact">
-        <div class="contact-container" style="margin-top: 0px !important;">
-            <div class=""  >Contact</div> <br>
-            <div>Send me an E-Mail at <a style="display: inline !important;"
-                    href="mailto:betschart.kaai@gmail.com">betschart.kaai@gmail.com</a> <br> or use the contact form
-                below.</div> <br>
-            <form id="contact-form">
-                <p>Name</p>
-                <input type="text" name="user_name" required />
-                <p>E-Mail</p>
-                <input type="email" name="user_email" required />
-                <p>Subject</p>
-                <input type="subject" name="subject" required />
-                <p>Message</p>
-                <textarea name="message"></textarea>
-                <button type="submit">Send</button>
-            </form>
-            <div id="status"></div>
-        </div>
+        <div class="blockInlet">Projects</div>
     </div>
+
+
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
@@ -47,34 +83,37 @@
             emailjs.init("ICG9lWozHI-h3Ry2t");
         })();
 
-        const form = document.getElementById("contact-form");
-        const status = document.getElementById("status");
+        const forms = document.querySelectorAll(".contact-form");
 
-        form.addEventListener("submit", function (e) {
-            e.preventDefault();
+        forms.forEach((form) => {
+            const status = form.nextElementSibling;
 
-            status.innerText = "Sending...";
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
 
-            emailjs.sendForm(
-                "service_u6tb9op",
-                "template_9ehghbl",
-                this
-            )
-                .then(() => {
-                    status.innerText = "Message sent successfully.";
-                    form.reset();
-                })
-                .catch((error) => {
-                    status.innerText = "Failed to send message.";
-                    console.error(error);
-                });
+                status.innerText = "Sending...";
+
+                emailjs.sendForm(
+                    "service_u6tb9op",
+                    "template_9ehghbl",
+                    form
+                )
+                    .then(() => {
+                        status.innerText = "Message sent successfully.";
+                        form.reset();
+                    })
+                    .catch((error) => {
+                        status.innerText = "Failed to send message.";
+                        console.error(error);
+                    });
+            });
         });
-
-
 
     </script>
 
-</body>
 
+
+
+</body>
 
 </html>
