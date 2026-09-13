@@ -1,0 +1,727 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* --border: #d8d8d8; */
+    /* --border-dark: #b8b8b8; */
+    --bg: white;
+    --panel: white;
+    --text: black;
+    --muted: #c0c0c0;
+    --selected: #e376763b;
+    --selected-border: red;
+}
+
+body {
+    margin: 0;
+    padding: 5px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+}
+
+h1 {
+    margin-bottom: 18px;
+}
+
+h2 {
+    font-size: 11px;
+    margin-bottom: 18px;
+    padding-bottom: 6px;
+    font-weight: 400;
+    border-bottom: 3px solid black;
+    text-transform: uppercase;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button:not(.icon, .doButton) {
+    border: 1px solid var(--border-dark);
+    background: white;
+    padding: 6px 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #f0f0f0;
+}
+
+button.primary {
+    background: #111;
+    color: white;
+    border-color: #111;
+}
+
+button.primary:hover {
+    background: #333;
+}
+
+button.danger {
+    color: #b00020;
+}
+
+.app {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.doButton {
+    background-color: rgb(236, 236, 236);
+    border: 1px solid rgb(141, 141, 141);
+    color: black;
+    border-radius: 100%;
+    font-size: 11px;
+    line-height: 0;
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+}
+
+.icon {
+    border: 1px solid var(--border-dark);
+    background: white;
+    padding: 0px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background: white;
+}
+
+.icon.primary {
+    background: white;
+    color: white;
+    border-color: #000000;
+}
+
+.icon.primary:hover {
+    background: #8f3535;
+}
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.input-panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+}
+
+.input-row {
+    display: flex;
+    gap: 5px;
+}
+
+.input-row input[type="text"] {
+    flex: 1;
+    min-width: 0;
+    padding: 6px;
+    background-color: rgb(236, 236, 236);
+    border: 0px;
+    margin-bottom: 6px;
+}
+
+/* =========================================================
+   MATRIX
+========================================================= */
+
+.matrix {
+    /* display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(400px, 520px); */
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    align-items: start;
+
+
+}
+
+.matrixUpper {
+    display: flex;
+    margin-bottom: 18px;
+    /* flex-flow: column nowrap;
+    align-items: stretch; */
+    gap: 6px;
+}
+
+.left-column,
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 50%;
+}
+
+.panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    /* padding: 5px; */
+}
+
+.upper {
+    display: flex;
+    position: relative;
+    align-items: stretch;
+}
+
+/* =========================================================
+   GENERATOR
+========================================================= */
+
+
+.resize-handle {
+    position: fixed;
+    height: 8px;
+    cursor: ns-resize;
+    z-index: 1000;
+    touch-action: none;
+    user-select: none;
+
+
+    /* JS sets these dynamically */
+    left: 0;
+    top: 0;
+    width: 300px;
+
+}
+
+.resize-handle::after {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    width: 36px;
+    height: 3px;
+
+    transform: translate(-50%, -50%);
+
+    background: currentColor;
+    pointer-events: none;
+}
+
+body.resizing-generator-window {
+    cursor: ns-resize !important;
+    user-select: none !important;
+}
+
+body.resizing-generator-window * {
+    cursor: ns-resize !important;
+    user-select: none !important;
+}
+
+
+
+
+.generator {
+    /* height: calc(100vh - 484px); */
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: auto; */
+    overflow: visible;
+    white-space: nowrap;
+    position: relative;
+}
+
+.letter-container {
+    /* white-space: pre-wrap;
+    word-break: break-word; */
+    line-height: 1.2;
+    text-align: center;
+}
+
+.letter {
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    white-space: pre;
+    outline: none;
+
+    /*
+        Selection is NOT visible by default.
+    */
+}
+
+.letter:hover {
+    background: rgba(0, 0, 0, 0.137);
+}
+
+.letter.selected {
+    background: var(--selected);
+    box-shadow:
+        inset 0 0 0 1px var(--selected-border);
+}
+
+.letter.space {
+    cursor: default;
+}
+
+.letter.space:hover {
+    background: transparent;
+}
+
+/* =========================================================
+   GENERAL SETTINGS
+========================================================= */
+
+.general-settings {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px; */
+}
+
+#fontFamily {
+    width: 105%;
+    border: none;
+    background-color: rgb(236, 236, 236);
+    padding: 6px;
+    border-radius: 0;
+    font-size: 11px;
+    font-family: Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.field {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 6px;
+    align-items: center;
+}
+
+.field label {
+    font-size: 11px;
+    width: 100px;
+}
+
+.field input {
+    width: 100%;
+    cursor: ns-resize;
+    padding: 6px;
+    border: 1px solid var(--border-dark);
+    background-color: rgb(236, 236, 236);
+}
+
+/* =========================================================
+   RANDOM SETTINGS
+========================================================= */
+
+.random-list {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+    Each row now has:
+
+    [toggle] [setting] [range] [apply] [reset]
+*/
+.setting-row {
+    display: flex;
+    /* grid-template-columns: 42px 150px minmax(100px, 1fr) 50px 50px; */
+    gap: 6px;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.setting-row:last-child {
+    border-bottom: 0;
+}
+
+.setting-name {
+    /* font-family: monospace; */
+    font-size: 11px;
+    width: 60px;
+    margin-right: 20px;
+}
+
+.apply-setting {
+    margin-left: -18px;
+}
+
+/* Toggle */
+
+.toggle {
+    position: relative;
+    width: 24px;
+    height: 12px;
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-slider {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    background: #ccc;
+    transition: 0.15s;
+}
+
+.toggle-slider::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 2px;
+    top: 2px;
+    background: white;
+    transition: 0.15s;
+}
+
+.toggle input:checked+.toggle-slider {
+    background: #111;
+}
+
+.toggle input:checked+.toggle-slider::before {
+    transform: translateX(12px);
+}
+
+/*
+    Disabled rows are visually muted.
+*/
+.setting-row.disabled {
+    opacity: 0.4;
+}
+
+.range-controls {
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    gap: 6px;
+}
+
+.range-controls input {
+    width: 50px;
+    min-width: 0;
+    padding: 6px;
+    border: 1px solid var(--border);
+    margin-left: -22px;
+}
+
+.range-controls input.drag-number {
+    cursor: ns-resize;
+}
+
+.range-controls input.drag-number:active {
+    cursor: ns-resize;
+}
+
+input:focus-visible {
+    outline: 0px solid;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.color-preview {
+    width: 100%;
+    height: 32px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    display: none;
+}
+
+.color-preview input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.global-random-row {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-dark);
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    gap: 10px;
+}
+
+/* =========================================================
+   CONTROL PANEL
+========================================================= */
+
+.selection-info {
+    /* padding: 6px;
+    background: rgb(236, 236, 236); */
+    border: 1px solid var(--border);
+    /* margin-bottom: 18px; */
+    font-size: 11px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.selection-info strong {
+    /* font-family: monospace; */
+}
+
+.control-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.number-unit {
+    margin-left: 4px;
+    white-space: nowrap;
+}
+
+.control-reset {
+    min-width: 64px;
+}
+
+.control-number {
+    width: 60px;
+    border: 0;
+    cursor: ns-resize;
+    margin-right: -22px;
+}
+
+.control-row {
+    display: flex;
+    /* grid-template-columns: 150px minmax(100px, 1fr) 70px; */
+    /* gap: 10px; */
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.control-row:last-child {
+    border-bottom: 0;
+}
+
+.control-name {
+    width: 90px;
+    /* font-family: monospace; */
+    font-size: 11px;
+}
+
+.control-slider {
+    width: 100%;
+}
+
+.control-value {
+    /* font-family: monospace; */
+    font-size: 11px;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform: translateX(-72px);
+    width: 26px;
+    overflow: visible;
+}
+
+.color-control {
+    width: 12px;
+    height: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+::-moz-color-swatch {
+    border: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
+input[type="color"]::-moz-color-swatch {
+    border: none;
+}
+
+.control-actions {
+    margin-top: 18px;
+    margin-bottom: 6px;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute;
+    bottom: 0;
+    right: 50%; */
+}
+
+.control-actions .selectButton {
+    border: 1px solid rgb(211, 211, 211);
+    color: black;
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+}
+
+
+
+/* =========================================================
+   EXPORT
+========================================================= */
+
+.export-panel {
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+}
+
+.exportButton {
+    /* background-color: rgb(14, 240, 6); */
+    border: 1px solid rgb(14, 156, 9);
+    color: black;
+    font-weight: 700;
+    border-radius: 100%;
+    font-size: 11px;
+    padding: 6px;
+    aspect-ratio: 1 / 1;
+}
+
+.status {
+    /* color: var(--muted); */
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* =========================================================
+   UNDO PANEL
+========================================================= */
+
+.undo {
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    height: 100%;
+    margin-bottom: 6px;
+}
+
+.change-status {
+    cursor: pointer;
+    user-select: none;
+    /* position: relative; */
+    text-align: center;
+    width: 100%;
+}
+
+
+.change-history-panel {
+    position: fixed;
+    z-index: 9999;
+    width: min(520px, calc(100vw - 32px));
+    max-height: min(420px, calc(100vh - 32px));
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 0px 6px 0px 6px;
+    border: 1px solid rgb(211, 211, 211);
+    background: #ffffff;
+    color: black;
+    font-family: inherit;
+    font-size: 11px;
+    /* line-height: 1.45; */
+}
+
+.change-history-entry {
+    border-bottom: 1px solid rgb(211, 211, 211);
+    word-break: break-word;
+    padding: 6px 0px 6px 0px;
+
+}
+
+.change-history-entry:last-child {
+    border-bottom: 0;
+    /* padding: 6px 0px 0px 0px; */
+
+}
+
+.change-history-entry:first-child {
+    /* padding: 6px 0px 6px 0px; */
+    font-weight: 600;
+
+}
+
+.change-history-empty {
+    opacity: 0.6;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+    .matrix {
+        grid-template-columns: 1fr;
+    }
+
+    .setting-row {
+        grid-template-columns: 42px 150px 1fr 80px 80px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    body {
+        display: block;
+    }
+
+    .app {
+        width: 100%;
+    }
+
+    .upper {
+        height: 110px;
+    }
+
+    .matrixUpper {
+        display: block;
+    }
+
+    .matrix {
+        display: block;
+    }
+
+    .left-column{
+        width: 100%;
+    }
+
+    .right-column {
+        width: 100%;
+    }
+    
+}

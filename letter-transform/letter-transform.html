@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Transformer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+
+        <!-- =====================================================
+         TEXT INPUT
+    ====================================================== -->
+
+
+        <section class="panel" style="width: 50%;">
+
+            <h2>General Settings</h2>
+
+            <div class="general-settings">
+                <div class="field">
+                    <label for="fontSize">Font size</label>
+                    <input id="fontSize" type="text" value="64px">
+                </div>
+
+                <div class="field">
+                    <label for="fontFamily">Font family</label>
+                    <input id="fontFamily" type="text" value="Helvetica, sans-serif">
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="panel generator window" id="window">
+
+                <div id="letterContainer" class="letter-container"></div>
+
+        </section>
+
+            <div class="resize-handle"></div>
+
+
+        <div class="control-actions">
+            <button id="selectAllButton" class="icon selectButton"> ⬚</button>
+            <button id="deselectButton" class="icon selectButton" style="line-height: 0;"> ⧅ </button>
+        </div>
+
+        <div id="selectionInfo" class="selection-info"></div>
+
+        <div class="matrixUpper">
+            <div class="left-column">
+                <section class="input-panel">
+
+                    <h2>INPUT</h2>
+                    <div class="input-row">
+                        <input id="textInput" type="text" value="letter transform"
+                            placeholder="Enter one or multiple words...">
+                    </div>
+                    <button id="generateButton" class="primary">
+                        Apply Text
+                    </button>
+
+                </section>
+                <!-- General parent settings -->
+
+
+            </div>
+
+            <div class="right-column upper">
+
+                <div id="status" class="status"></div>
+
+                <div class="undo">
+
+                    <button id="undoButton" class=" doButton">Undo</button>
+                    <section class="export-panel">
+                        <button id="exportButton" class="icon exportButton">Export .txt</button>
+                    </section>
+                    <button id="redoButton" class=" doButton">Redo</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="matrix">
+
+            <!-- =================================================
+             LEFT
+        ================================================== -->
+
+            <div class="left-column">
+
+
+
+                <!-- Random settings -->
+
+                <section class="panel">
+
+                    <h2>Random Settings</h2>
+
+                    <div class="random-list">
+                        <!-- SCALE X -->
+
+                        <div class="setting-row" data-row-setting="scaleX">
+
+                            <label class="toggle">
+                                <input type="checkbox" class="setting-enabled" data-setting="scaleX" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+
+                            <div class="setting-name">
+                                scaleX
+                            </div>
+
+                            <div class="range-controls">
+
+                                <input class="range-min" data-setting="scaleX" type="number" value="0" step="0.1">
+
+                                <input class="range-max" data-setting="scaleX" type="number" value="2" step="0.1">
+
+                            </div>
+
+                            <button class="apply-setting" data-setting="scaleX">
+                                Apply
+                            </button>
+
+                            <button class="reset-setting" data-setting="scaleX">
+                                Reset
+                            </button>
+
+                        </div>
+
+
+                        <!-- SCALE Y -->
+
+                        <div class="setting-row" data-row-setting="scaleY">
+
+                            <label class="toggle">
+                                <input type="checkbox" class="setting-enabled" data-setting="scaleY" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+
+                            <div class="setting-name">
+                                scaleY
+                            </div>
+
+                            <div class="range-controls">
+
+                                <input class="range-min" data-setting="scaleY" type="number" value="0" step="0.1">
+
+                                <input class="range-max" data-setting="scaleY" type="number" value="2" step="0.1">
+
+                            </div>
+
+                            <button class="apply-setting" data-setting="scaleY">
+                                Apply
+                            </button>
+
+                            <button class="reset-setting" data-setting="scaleY">
+                                Reset
+                            </button>
+
+                        </div>
+
+
+                        <!-- TRANSLATE X -->
+
+                        <div class="setting-row" data-row-setting="translateX">
+
+                            <label class="toggle">
+                                <input type="checkbox" class="setting-enabled" data-setting="translateX">
+                                <span class="toggle-slider"></span>
+                            </label>
+
+                            <div class="setting-name">
+                                translateX
+                            </div>
+
+                            <div class="range-controls">
+
+                                <input class="range-min" data-setting="translateX" type="number" value="-20" step="1">
+
+                                <input class="range-max" data-setting="translateX" type="number" value="20" step="1">
+
+                            </div>
+
+                            <button class="apply-setting" data-setting="translateX">
+                                Apply
+                            </button>
+
+                            <button class="reset-setting" data-setting="translateX">
+                                Reset
+                            </button>
+
+                        </div>
+
+
+                        <!-- TRANSLATE Y -->
+
+                        <div class="setting-row" data-row-setting="translateY">
+
+                            <label class="toggle">
+                                <input type="checkbox" class="setting-enabled" data-setting="translateY">
+                                <span class="toggle-slider"></span>
+                            </label>
+
+                            <div class="setting-name">
+                                translateY
+                            </div>
+
+                            <div class="range-controls">
+
+                                <input class="range-min" data-setting="translateY" type="number" value="-20" step="1">
+
+                                <input class="range-max" data-setting="translateY" type="number" value="20" step="1">
+
+                            </div>
+
+                            <button class="apply-setting" data-setting="translateY">
+                                Apply
+                            </button>
+
+                            <button class="reset-setting" data-setting="translateY">
+                                Reset
+                            </button>
+
+                        </div>
+
+
+                        <!-- COLOR -->
+
+                        <div class="setting-row" data-row-setting="color">
+
+                            <label class="toggle">
+                                <input type="checkbox" class="setting-enabled" data-setting="color">
+                                <span class="toggle-slider"></span>
+                            </label>
+
+                            <div class="setting-name">
+                                color
+                            </div>
+
+                            <div style="width: 62px;"></div>
+
+                            <div class="color-preview">
+
+                                <input id="randomColor" type="color" value="#000000">
+
+                            </div>
+
+                            <button class="apply-setting" data-setting="color">
+                                Apply
+                            </button>
+
+                            <button class="reset-setting" data-setting="color">
+                                Reset
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- GLOBAL -->
+
+                    <div class="global-random-row" style="margin-left: 166px;">
+
+                        <button id="randomAllButton" class="primary">
+                            Apply
+                        </button>
+
+                        <button id="resetAllButton" class="danger">
+                            Reset
+                        </button>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+            <!-- =================================================
+             RIGHT
+        ================================================== -->
+
+            <div class="right-column">
+
+                <section class="panel">
+
+                    <h2>Controls</h2>
+
+
+
+                    <div id="controlList" class="control-list"></div>
+
+
+
+                </section>
+
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
